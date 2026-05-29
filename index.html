@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>机票大搜页</title>
+  <title>机票大搜页 UE Pro Max</title>
   <style>
     :root {
       --bg: #dfe4ec;
@@ -422,33 +422,6 @@
 
     .app.is-collapsed .search-card {
       z-index: 12;
-    }
-
-    .brand-strip {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 6px;
-      padding-bottom: 12px;
-      margin-bottom: 12px;
-      border-bottom: 1px solid #f2f4f7;
-    }
-
-    .brand-mark {
-      width: 16px;
-      height: 16px;
-      display: grid;
-      place-items: center;
-      border-radius: 999px;
-      color: #fff;
-      font-size: 9px;
-      background: linear-gradient(135deg, var(--blue-700), var(--blue-500));
-    }
-
-    .brand-strip span:last-child {
-      color: var(--ink);
-      font-size: 13px;
-      letter-spacing: 1px;
     }
 
     .tabs {
@@ -1721,16 +1694,14 @@
       position: relative;
       z-index: 12;
       overflow: hidden;
-      margin: 14px 16px 0;
-      padding: 15px 14px 13px;
-      border: 1px solid rgba(222, 229, 240, 0.72);
-      border-radius: 28px;
+      margin: 8px 16px 0;
+      padding: 7px 8px 8px;
+      border: 1px solid rgba(222, 229, 240, 0.9);
+      border-radius: 17px;
       background:
-        radial-gradient(circle at 92% 0%, rgba(65, 185, 214, 0.16) 0 54px, transparent 56px),
-        radial-gradient(circle at 8% 100%, rgba(65, 178, 78, 0.1) 0 74px, transparent 76px),
-        linear-gradient(135deg, rgba(255, 255, 255, 0.98) 0%, #f2f8ff 54%, #f9fff8 100%);
+        linear-gradient(135deg, rgba(255, 255, 255, 0.98) 0%, #f7fbff 58%, #f8fff9 100%);
       box-shadow:
-        0 16px 34px rgba(26, 43, 79, 0.08),
+        0 6px 16px rgba(26, 43, 79, 0.045),
         inset 0 0 0 1px rgba(255, 255, 255, 0.78);
       transition: padding 220ms ease, border-radius 220ms ease, box-shadow 220ms ease, background 220ms ease;
     }
@@ -1738,14 +1709,14 @@
     .role-intro::after {
       content: "";
       position: absolute;
-      right: -18px;
-      top: -28px;
-      width: 104px;
-      height: 104px;
+      right: -24px;
+      top: -34px;
+      width: 76px;
+      height: 76px;
       border-radius: 999px;
       background:
         radial-gradient(circle, rgba(255, 255, 255, 0.72), transparent 58%),
-        linear-gradient(135deg, rgba(47, 86, 166, 0.13), rgba(65, 178, 78, 0.1));
+        linear-gradient(135deg, rgba(2, 132, 199, 0.08), rgba(5, 150, 105, 0.08));
       pointer-events: none;
     }
 
@@ -1757,18 +1728,17 @@
     }
 
     .role-guide-row {
-      display: grid;
-      grid-template-columns: 40px minmax(0, 1fr) auto;
-      gap: 9px;
-      align-items: center;
+      position: relative;
+      z-index: 1;
+      margin-top: 4px;
     }
 
     .role-ai-avatar {
-      width: 40px;
-      height: 40px;
+      width: 34px;
+      height: 34px;
       display: grid;
       place-items: center;
-      border-radius: 17px;
+      border-radius: 14px;
       color: #fff;
       background:
         linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.24) 48%, transparent 100%) -120% 0 / 58px 100% no-repeat,
@@ -1781,7 +1751,7 @@
       display: inline-flex;
       align-items: center;
       margin-bottom: 2px;
-      padding: 2px 8px;
+      padding: 2px 7px;
       border-radius: 999px;
       color: var(--blue-700);
       font-size: 10px;
@@ -1793,23 +1763,27 @@
     .role-guide-copy h2 {
       margin: 0;
       color: var(--ink);
-      font-size: 17.5px;
+      font-size: 15.5px;
       line-height: 1.26;
       letter-spacing: 0.1px;
     }
 
     .role-guide-copy p {
-      margin: 4px 0 0;
-      color: #63728b;
-      font-size: 12px;
-      line-height: 1.38;
+      margin: 0;
+      color: #6d7a90;
+      font-size: 10.8px;
+      line-height: 1.35;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
 
     .role-meta-row {
       display: flex;
       align-items: center;
+      justify-content: space-between;
       gap: 8px;
-      margin-top: 8px;
+      margin-top: 0;
     }
 
     .last-role-note {
@@ -1817,10 +1791,10 @@
       align-items: center;
       max-width: 100%;
       min-width: 0;
-      padding: 5px 10px;
+      padding: 4px 9px;
       border-radius: 999px;
       color: #31547c;
-      font-size: 11px;
+      font-size: 10.8px;
       font-weight: 760;
       background: rgba(255, 255, 255, 0.86);
       box-shadow: 0 6px 14px rgba(26, 43, 79, 0.05), inset 0 0 0 1px rgba(222, 229, 240, 0.86);
@@ -1843,20 +1817,28 @@
 
     .role-edit {
       flex: none;
-      padding: 7px 10px;
+      min-height: 30px;
+      padding: 5px 10px;
       border-radius: 999px;
       color: var(--blue-700);
-      font-size: 11.5px;
+      font-size: 11px;
       font-weight: 760;
       background: rgba(255, 255, 255, 0.9);
       box-shadow: inset 0 0 0 1px rgba(222, 229, 240, 0.9), 0 6px 14px rgba(26, 43, 79, 0.06);
     }
 
     .role-pick-grid {
-      display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-      gap: 8px;
-      margin-top: 11px;
+      display: flex;
+      gap: 6px;
+      margin-top: 7px;
+      overflow-x: auto;
+      padding-bottom: 1px;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+    }
+
+    .role-pick-grid::-webkit-scrollbar {
+      display: none;
     }
 
     .role-pick-card {
@@ -1864,17 +1846,19 @@
       --pick-2: #4a7bc8;
       position: relative;
       overflow: hidden;
-      display: grid;
-      justify-items: center;
-      gap: 4px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex: 0 0 auto;
+      gap: 5px;
       min-width: 0;
-      min-height: 74px;
-      padding: 8px 4px 7px;
-      border-radius: 20px;
+      min-height: 36px;
+      padding: 6px 10px;
+      border-radius: 999px;
       color: #52617a;
       background: rgba(255, 255, 255, 0.82);
       box-shadow:
-        0 7px 16px rgba(26, 43, 79, 0.045),
+        0 5px 12px rgba(26, 43, 79, 0.045),
         inset 0 0 0 1px rgba(222, 229, 240, 0.86);
       transition: transform 180ms ease, color 180ms ease, background 180ms ease, box-shadow 180ms ease;
     }
@@ -1912,12 +1896,27 @@
       --pick-2: #41b9d6;
     }
 
+    .role-pick-card[data-selector-target="pet"] {
+      --pick: #2b9a8c;
+      --pick-2: #41b9d6;
+    }
+
+    .role-pick-card[data-selector-target="services"] {
+      --pick: #4a6f9f;
+      --pick-2: #41b9d6;
+    }
+
+    .role-pick-card[data-selector-target="airlines"] {
+      --pick: #2f56a6;
+      --pick-2: #4a7bc8;
+    }
+
     .role-pick-icon {
-      width: 30px;
-      height: 30px;
+      width: 22px;
+      height: 22px;
       display: grid;
       place-items: center;
-      border-radius: 13px;
+      border-radius: 9px;
       color: var(--pick);
       background: color-mix(in srgb, var(--pick) 9%, #fff);
       box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--pick) 8%, transparent);
@@ -1925,16 +1924,13 @@
 
     .role-pick-card strong {
       color: var(--ink);
-      font-size: 12.5px;
-      line-height: 1.15;
+      font-size: 12px;
+      line-height: 1;
+      white-space: nowrap;
     }
 
     .role-pick-card em {
-      color: #7a879a;
-      font-size: 10px;
-      font-style: normal;
-      line-height: 1.2;
-      white-space: nowrap;
+      display: none;
     }
 
     .role-pick-card.active {
@@ -1968,11 +1964,11 @@
     .support-pick-row {
       display: flex;
       gap: 7px;
-      margin-top: 9px;
-      padding: 5px;
+      margin-top: 7px;
+      padding: 0;
       border-radius: 18px;
-      background: rgba(255, 255, 255, 0.45);
-      box-shadow: inset 0 0 0 1px rgba(222, 229, 240, 0.62);
+      background: transparent;
+      box-shadow: none;
     }
 
     .support-pick-row button {
@@ -1982,8 +1978,8 @@
       align-items: center;
       justify-content: center;
       gap: 5px;
-      min-height: 31px;
-      padding: 6px 8px;
+      min-height: 28px;
+      padding: 5px 8px;
       border-radius: 999px;
       color: #627089;
       font-size: 11.5px;
@@ -2075,8 +2071,8 @@
     }
 
     .role-card {
-      min-height: 188px;
-      padding: 17px;
+      min-height: 0;
+      padding: 15px 16px;
       isolation: isolate;
       cursor: pointer;
       transition: transform 180ms ease, box-shadow 180ms ease;
@@ -2089,25 +2085,27 @@
     .role-card::after {
       content: "";
       position: absolute;
-      right: -28px;
-      bottom: -40px;
-      width: 150px;
-      height: 150px;
+      right: -42px;
+      bottom: -48px;
+      width: 132px;
+      height: 132px;
       border-radius: 50%;
-      background: color-mix(in srgb, var(--accent) 11%, transparent);
+      background: color-mix(in srgb, var(--accent) 8%, transparent);
       z-index: 0;
     }
 
-    .home-section.is-last-role .role-card {
+    .home-section.is-first-role .role-card {
+      padding: 18px 17px 19px;
       box-shadow:
         0 16px 34px color-mix(in srgb, var(--accent) 14%, transparent),
         inset 0 0 0 1px color-mix(in srgb, var(--accent) 18%, #fff);
     }
 
     .role-badge {
-      display: inline-flex;
+      display: none;
       align-items: center;
       gap: 4px;
+      width: max-content;
       margin-bottom: 8px;
       padding: 4px 8px;
       border-radius: 999px;
@@ -2116,6 +2114,52 @@
       font-weight: 760;
       background: linear-gradient(135deg, var(--accent), var(--accent-2, var(--accent)));
       box-shadow: 0 8px 16px color-mix(in srgb, var(--accent) 18%, transparent);
+    }
+
+    .home-section.is-first-role .role-badge {
+      display: flex;
+    }
+
+    .role-title-line {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      min-width: 0;
+    }
+
+    .role-title-icon {
+      display: none;
+      width: 24px;
+      height: 24px;
+      flex: none;
+      place-items: center;
+      border-radius: 9px;
+      color: #fff;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2, var(--accent)));
+      box-shadow: 0 7px 14px color-mix(in srgb, var(--accent) 18%, transparent);
+    }
+
+    .role-title-icon .icon {
+      width: 15px;
+      height: 15px;
+    }
+
+    .home-section.is-first-role .role-title-icon {
+      display: grid;
+    }
+
+    .home-section.is-first-role .home-section-head h3 {
+      font-size: 19px;
+    }
+
+    .home-section.is-first-role .role-tags {
+      margin-top: 12px;
+    }
+
+    .home-section.is-first-role .home-cta {
+      margin-top: 13px;
+      padding: 8px 14px 8px 16px;
+      font-size: 12.5px;
     }
 
     .role-story {
@@ -2139,34 +2183,41 @@
     }
 
     .role-tags span {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
       padding: 5px 8px;
       border-radius: 999px;
       color: color-mix(in srgb, var(--accent) 82%, #263850);
       font-size: 11px;
       font-weight: 650;
+      line-height: 1.2;
+      text-align: center;
       background: rgba(255, 255, 255, 0.72);
       box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--accent) 14%, #fff);
     }
 
     .role-visual {
       position: absolute;
-      right: 18px;
-      top: 64px;
-      width: 72px;
-      height: 72px;
+      right: 14px;
+      bottom: 12px;
+      top: auto;
+      width: 56px;
+      height: 56px;
       display: grid;
       place-items: center;
-      border-radius: 28px;
+      border-radius: 20px;
       color: #fff;
       background: linear-gradient(135deg, var(--accent), var(--accent-2, var(--accent)));
-      box-shadow: 0 14px 28px color-mix(in srgb, var(--accent) 22%, transparent);
+      opacity: 0.14;
+      box-shadow: none;
       transform: rotate(-5deg);
-      z-index: 1;
+      z-index: 0;
     }
 
     .role-visual .icon {
-      width: 34px;
-      height: 34px;
+      width: 28px;
+      height: 28px;
     }
 
     .role-card .home-cta {
@@ -2175,81 +2226,56 @@
     }
 
     #business .role-card {
-      min-height: 154px;
       padding: 15px 16px;
       background:
-        radial-gradient(circle at 91% 13%, rgba(65, 185, 214, 0.14) 0 50px, transparent 52px),
-        radial-gradient(circle at 9% 100%, rgba(255, 255, 255, 0.94) 0 70px, transparent 72px),
+        radial-gradient(circle at 92% 12%, rgba(65, 185, 214, 0.1) 0 46px, transparent 48px),
+        radial-gradient(circle at 8% 100%, rgba(255, 255, 255, 0.94) 0 64px, transparent 66px),
         linear-gradient(135deg, #f9fbff 0%, #eef4ff 54%, #ffffff 100%);
       box-shadow:
-        0 16px 34px rgba(47, 86, 166, 0.11),
+        0 14px 30px rgba(47, 86, 166, 0.09),
         inset 0 0 0 1px rgba(255, 255, 255, 0.86);
     }
 
     #business .role-badge {
-      margin-bottom: 7px;
+      margin-bottom: 6px;
       padding: 4px 9px;
-      background:
-        linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.24) 48%, transparent 100%) -120% 0 / 58px 100% no-repeat,
-        linear-gradient(135deg, var(--accent), var(--accent-2, var(--accent)));
-      animation: businessScan 3.6s ease-in-out infinite;
+      color: #2f56a6;
+      background: rgba(255, 255, 255, 0.82);
+      box-shadow: inset 0 0 0 1px rgba(47, 86, 166, 0.12);
     }
 
     #business .home-section-head p {
-      max-width: calc(100% - 86px);
+      max-width: 100%;
       color: #526985;
+      font-size: 11.5px;
       line-height: 1.38;
-    }
-
-    #business .role-tags {
-      max-width: calc(100% - 92px);
-      margin-top: 11px;
-      gap: 6px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
 
     #business .role-visual {
-      top: 70px;
-      right: 15px;
-      width: 72px;
-      height: 66px;
+      top: auto;
+      right: 14px;
+      bottom: 12px;
+      width: 56px;
+      height: 56px;
       overflow: visible;
-      border-radius: 25px;
+      border-radius: 20px;
       background:
         radial-gradient(circle at 78% 16%, rgba(255, 255, 255, 0.34), transparent 36%),
         linear-gradient(135deg, #244f9d, #357ddd 58%, #41b9d6);
-      box-shadow: 0 14px 28px rgba(47, 86, 166, 0.2);
+      opacity: 0.13;
+      box-shadow: none;
       transform: rotate(-4deg);
     }
 
     #business .role-visual::before {
-      content: "";
-      position: absolute;
-      right: -5px;
-      top: 8px;
-      width: 34px;
-      height: 24px;
-      border-radius: 8px;
-      background:
-        linear-gradient(180deg, rgba(47, 86, 166, 0.16) 0 3px, transparent 3px 7px, rgba(47, 86, 166, 0.12) 7px 9px, transparent 9px),
-        rgba(255, 255, 255, 0.9);
-      box-shadow: 0 8px 16px rgba(47, 86, 166, 0.16);
-      transform: rotate(9deg);
+      display: none;
     }
 
     #business .role-visual::after {
-      content: "";
-      position: absolute;
-      left: -5px;
-      bottom: 8px;
-      width: 32px;
-      height: 24px;
-      border-radius: 7px;
-      background:
-        linear-gradient(90deg, transparent 48%, rgba(47, 86, 166, 0.14) 49% 51%, transparent 52%),
-        linear-gradient(180deg, transparent 48%, rgba(47, 86, 166, 0.14) 49% 51%, transparent 52%),
-        rgba(255, 255, 255, 0.88);
-      box-shadow: 0 8px 16px rgba(47, 86, 166, 0.14);
-      transform: rotate(-8deg);
+      display: none;
     }
 
     #business .role-visual .icon {
@@ -2270,11 +2296,10 @@
     }
 
     .home-section[data-role-section]:not(#business) .role-card {
-      min-height: 118px;
-      padding: 13px 14px;
+      padding: 15px 16px;
       border-radius: 22px;
       background:
-        radial-gradient(circle at 96% 8%, color-mix(in srgb, var(--accent) 10%, transparent) 0 44px, transparent 45px),
+        radial-gradient(circle at 96% 8%, color-mix(in srgb, var(--accent) 7%, transparent) 0 46px, transparent 48px),
         linear-gradient(135deg, #fff 0%, color-mix(in srgb, var(--from) 64%, #fff) 100%);
     }
 
@@ -2286,17 +2311,25 @@
     }
 
     .home-section[data-role-section]:not(#business) .home-section-head h3 {
-      font-size: 16px;
+      font-size: 17px;
     }
 
     .home-section[data-role-section]:not(#business) .home-section-head p {
-      max-width: 245px;
+      max-width: 100%;
       font-size: 11.5px;
       line-height: 1.35;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
 
     .home-section[data-role-section]:not(#business) .role-story {
-      display: none;
+      display: block;
+      max-width: calc(100% - 64px);
+      margin-top: 8px;
+      color: #53617a;
+      font-size: 11.3px;
+      line-height: 1.45;
     }
 
     .home-section[data-role-section]:not(#business) .role-tags {
@@ -2312,11 +2345,13 @@
 
     .home-section[data-role-section]:not(#business) .role-visual {
       right: 14px;
-      top: 50%;
-      width: 48px;
-      height: 48px;
-      border-radius: 18px;
-      transform: translateY(-50%) rotate(-5deg);
+      top: auto;
+      bottom: 12px;
+      width: 56px;
+      height: 56px;
+      border-radius: 20px;
+      transform: rotate(-5deg);
+      opacity: 0.13;
     }
 
     .home-section[data-role-section]:not(#business) .role-visual .icon {
@@ -2324,51 +2359,12 @@
       height: 24px;
     }
 
-    #elderly .role-card,
-    #family .role-card {
-      min-height: 148px;
-    }
-
-    #elderly .role-story,
-    #family .role-story {
-      display: block;
-      max-width: calc(100% - 64px);
-      margin-top: 8px;
-      color: #53617a;
-      font-size: 11.3px;
-      line-height: 1.45;
-    }
-
     #elderly .role-visual::after {
-      content: "大";
-      position: absolute;
-      right: -5px;
-      bottom: -5px;
-      width: 22px;
-      height: 22px;
-      display: grid;
-      place-items: center;
-      border-radius: 999px;
-      color: var(--accent);
-      font-size: 12px;
-      font-weight: 900;
-      background: #fff;
-      box-shadow: 0 6px 12px color-mix(in srgb, var(--accent) 16%, transparent);
+      display: none;
     }
 
     #family .role-visual::after {
-      content: "";
-      position: absolute;
-      right: -4px;
-      bottom: -4px;
-      width: 21px;
-      height: 21px;
-      border-radius: 8px;
-      background:
-        linear-gradient(90deg, transparent 48%, rgba(255, 255, 255, 0.72) 49% 51%, transparent 52%),
-        linear-gradient(180deg, transparent 48%, rgba(255, 255, 255, 0.72) 49% 51%, transparent 52%),
-        #fff;
-      box-shadow: 0 6px 12px color-mix(in srgb, var(--accent) 16%, transparent);
+      display: none;
     }
 
     .home-section[data-role-section]:not(#business) .home-cta {
@@ -2455,6 +2451,24 @@
       font-size: 19px;
     }
 
+    .business-page-mode {
+      flex: none;
+      width: 132px;
+      margin-top: 0;
+      background: rgba(47, 86, 166, 0.08);
+      box-shadow: inset 0 0 0 1px rgba(47, 86, 166, 0.08);
+    }
+
+    .business-page-mode button {
+      color: #63728b;
+    }
+
+    .business-page-mode button.is-selected {
+      color: #fff;
+      background: linear-gradient(135deg, #2f56a6, #41b9d6);
+      box-shadow: 0 7px 14px rgba(47, 86, 166, 0.18);
+    }
+
     .business-detail .detail-body {
       padding-top: 12px;
     }
@@ -2464,6 +2478,1168 @@
       padding: 15px;
       border-radius: 23px;
       box-shadow: 0 10px 24px rgba(26, 43, 79, 0.065), inset 0 0 0 1px rgba(255, 255, 255, 0.82);
+    }
+
+    .business-fast-card {
+      position: relative;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 96% 4%, rgba(47, 86, 166, 0.08) 0 46px, transparent 47px),
+        linear-gradient(180deg, #f7fbff 0%, #eef5ff 100%);
+    }
+
+    .business-detail .business-fast-card {
+      padding: 13px;
+    }
+
+    .business-fast-card::before {
+      display: none;
+    }
+
+    .business-fast-head,
+    .business-layer-head {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .business-fast-kicker,
+    .business-layer-kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 4px 8px;
+      border-radius: 999px;
+      color: #2f56a6;
+      font-size: 10.5px;
+      font-weight: 800;
+      background: rgba(239, 246, 255, 0.9);
+      box-shadow: inset 0 0 0 1px rgba(47, 86, 166, 0.12);
+    }
+
+    .business-fast-kicker svg,
+    .business-layer-kicker svg {
+      display: none;
+    }
+
+    .business-fast-head h2,
+    .business-layer-head h2 {
+      margin-top: 6px;
+    }
+
+    .business-fast-head p,
+    .business-layer-head p {
+      margin-top: 4px;
+      color: #65748c;
+      font-size: 11.5px;
+      line-height: 1.36;
+    }
+
+    .business-mode-switch {
+      flex: none;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 3px;
+      width: 118px;
+      padding: 3px;
+      border-radius: 999px;
+      background: rgba(47, 86, 166, 0.08);
+    }
+
+    .business-mode-switch button {
+      min-height: 28px;
+      border-radius: 999px;
+      color: #63728b;
+      font-size: 11.5px;
+      font-weight: 780;
+    }
+
+    .business-mode-switch button.is-selected {
+      color: #fff;
+      background: linear-gradient(135deg, #2f56a6, #41b9d6);
+      box-shadow: 0 7px 14px rgba(47, 86, 166, 0.18);
+    }
+
+    .business-origin-row {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 5px;
+      margin-top: 10px;
+    }
+
+    .business-origin-row button,
+    .business-date-shortcuts button,
+    .business-companion-chip,
+    .business-proxy-chip {
+      min-width: 0;
+      min-height: 30px;
+      padding: 6px 7px;
+      border-radius: 13px;
+      color: #52617a;
+      font-size: 11.5px;
+      font-weight: 760;
+      background: rgba(255, 255, 255, 0.78);
+      box-shadow: inset 0 0 0 1px rgba(222, 229, 240, 0.86);
+    }
+
+    .business-origin-row button.is-selected,
+    .business-date-shortcuts button.is-selected,
+    .business-companion-chip.is-selected,
+    .business-proxy-chip.is-selected {
+      color: #2f56a6;
+      background: rgba(239, 246, 255, 0.94);
+      box-shadow: inset 0 0 0 1px rgba(47, 86, 166, 0.22), 0 7px 14px rgba(47, 86, 166, 0.08);
+    }
+
+    .business-route-panel,
+    .business-demand-card,
+    .business-traveler-card,
+    .business-profile-card,
+    .business-policy-card,
+    .business-workbench-card {
+      position: relative;
+      z-index: 1;
+    }
+
+    .business-route-panel {
+      margin-top: 10px;
+    }
+
+    .business-demand-card .business-route-panel {
+      margin-top: 12px;
+      padding-top: 12px;
+      border-top: 1px dashed rgba(180, 195, 219, 0.65);
+    }
+
+    .business-route-title.compact {
+      margin-top: 0;
+    }
+
+    .business-route-grid.business-route-grid {
+      gap: 6px;
+      margin-top: 7px;
+    }
+
+    .business-route-grid .route-chip {
+      padding: 7px;
+      border-radius: 15px;
+      background: rgba(255, 255, 255, 0.84);
+    }
+
+    .business-route-grid .route-chip strong {
+      font-size: 12.5px;
+    }
+
+    .business-route-grid .route-chip span {
+      margin-top: 2px;
+      font-size: 10.5px;
+    }
+
+    .business-demand-card {
+      margin-top: 10px;
+      padding: 13px;
+      border-radius: 22px;
+      background: rgba(255, 255, 255, 0.94);
+      box-shadow:
+        inset 0 0 0 1px rgba(212, 223, 239, 0.92),
+        0 10px 22px rgba(47, 86, 166, 0.065);
+    }
+
+    .business-demand-main {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 42px minmax(0, 1fr);
+      align-items: center;
+      gap: 8px;
+      padding: 2px 0 12px;
+      border-bottom: 1px dashed rgba(180, 195, 219, 0.75);
+    }
+
+    .business-demand-city {
+      min-width: 0;
+      padding: 0;
+      border-radius: 0;
+      text-align: left;
+      background: transparent;
+      box-shadow: none;
+    }
+
+    .business-demand-city:last-child {
+      text-align: right;
+    }
+
+    .business-demand-city strong {
+      display: block;
+      color: #1f3150;
+      font-size: 24px;
+      line-height: 1.15;
+    }
+
+    .business-demand-city span,
+    .business-demand-date span {
+      display: block;
+      margin-top: 3px;
+      color: #8a96aa;
+      font-size: 10.8px;
+      line-height: 1.25;
+    }
+
+    .business-demand-swap {
+      width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      border-radius: 999px;
+      color: #2f56a6;
+      background: #f2f6fc;
+      box-shadow:
+        inset 0 0 0 1px rgba(212, 223, 239, 0.9),
+        0 8px 16px rgba(47, 86, 166, 0.08);
+    }
+
+    .business-demand-dates {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 7px;
+      margin-top: 12px;
+    }
+
+    .business-demand-date {
+      padding: 9px 10px;
+      border-radius: 14px;
+      text-align: left;
+      background: #f8fbff;
+      box-shadow: inset 0 0 0 1px rgba(222, 229, 240, 0.95);
+    }
+
+    .business-demand-date strong {
+      display: block;
+      margin-top: 4px;
+      color: #263850;
+      font-size: 12.5px;
+      white-space: nowrap;
+    }
+
+    .business-demand-date.is-placeholder strong {
+      color: #a6b0c2;
+    }
+
+    .business-date-shortcuts {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 5px;
+      margin-top: 7px;
+    }
+
+    .business-proxy-panel,
+    .business-traveler-card {
+      margin-top: 8px;
+      padding: 8px;
+      border-radius: 17px;
+      background: rgba(247, 250, 255, 0.82);
+      box-shadow: inset 0 0 0 1px rgba(222, 229, 240, 0.82);
+    }
+
+    .business-detail .detail-card.business-traveler-card {
+      margin-top: 10px;
+      padding: 15px;
+      border-radius: 23px;
+      background:
+        radial-gradient(circle at 94% 8%, rgba(65, 185, 214, 0.08) 0 48px, transparent 49px),
+        linear-gradient(135deg, #ffffff, #f7fbff);
+      box-shadow: 0 10px 24px rgba(26, 43, 79, 0.065), inset 0 0 0 1px rgba(255, 255, 255, 0.82);
+    }
+
+    .business-companion-card {
+      background:
+        radial-gradient(circle at 94% 8%, rgba(65, 185, 214, 0.08) 0 48px, transparent 49px),
+        linear-gradient(135deg, #ffffff, #f7fbff);
+    }
+
+    .business-companion-head {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .business-companion-head h2 {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 6px;
+      margin: 0;
+      color: #263850;
+      font-size: 17px;
+      line-height: 1.25;
+    }
+
+    .business-companion-head h2 .icon {
+      margin-right: 5px;
+      color: #2f56a6;
+      vertical-align: -3px;
+    }
+
+    .business-companion-count {
+      display: inline-flex;
+      align-items: center;
+      min-height: 21px;
+      padding: 0 8px;
+      border-radius: 999px;
+      color: #2f7a51;
+      font-size: 11px;
+      font-weight: 820;
+      background: #e9f8ef;
+      box-shadow: inset 0 0 0 1px rgba(43, 182, 115, 0.12);
+    }
+
+    .business-companion-head p {
+      margin-top: 5px;
+      color: #65748c;
+      font-size: 12px;
+      line-height: 1.35;
+    }
+
+    .business-companion-manage {
+      flex: none;
+      padding: 6px 9px;
+      border-radius: 999px;
+      color: #2f56a6;
+      font-size: 11.5px;
+      font-weight: 760;
+      background: #f2f6ff;
+      box-shadow: inset 0 0 0 1px rgba(47, 86, 166, 0.12);
+    }
+
+    .business-companion-empty {
+      margin-top: 11px;
+    }
+
+    .business-companion-empty[hidden] {
+      display: none;
+    }
+
+    .business-companion-empty button {
+      width: 100%;
+      min-height: 58px;
+      padding: 11px 12px;
+      border-radius: 17px;
+      text-align: left;
+      background: #f7fbff;
+      box-shadow: inset 0 0 0 1px rgba(207, 220, 242, 0.9);
+    }
+
+    .business-companion-empty strong,
+    .business-companion-empty span {
+      display: block;
+    }
+
+    .business-companion-empty strong {
+      color: #2f56a6;
+      font-size: 14px;
+      line-height: 1.3;
+    }
+
+    .business-companion-empty span {
+      margin-top: 4px;
+      color: #718099;
+      font-size: 11.3px;
+      line-height: 1.35;
+    }
+
+    .business-selected-companions {
+      display: grid;
+      gap: 8px;
+      margin-top: 11px;
+    }
+
+    .business-selected-companions[hidden] {
+      display: none;
+    }
+
+    .business-added-companion {
+      display: grid;
+      grid-template-columns: 28px minmax(0, 1fr) 22px 24px;
+      gap: 9px;
+      align-items: center;
+      padding: 10px;
+      border-radius: 17px;
+      background: rgba(255, 255, 255, 0.92);
+      box-shadow: inset 0 0 0 1px rgba(222, 229, 240, 0.9), 0 7px 16px rgba(26, 43, 79, 0.04);
+    }
+
+    .business-companion-remove {
+      width: 24px;
+      height: 24px;
+      border-radius: 999px;
+      color: #bd5662;
+      font-size: 18px;
+      line-height: 1;
+      background: #fff1f3;
+      box-shadow: inset 0 0 0 1px rgba(189, 86, 98, 0.18);
+    }
+
+    .business-added-copy {
+      min-width: 0;
+    }
+
+    .business-added-top {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+      min-width: 0;
+    }
+
+    .business-added-top strong,
+    .business-added-doc,
+    .business-added-status {
+      display: block;
+    }
+
+    .business-added-top strong {
+      min-width: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      color: #263850;
+      font-size: 13px;
+      line-height: 1.25;
+    }
+
+    .business-added-status {
+      flex: none;
+      margin-left: auto;
+      padding: 2px 7px;
+      border-radius: 999px;
+      color: #198c49;
+      font-size: 10.5px;
+      font-weight: 760;
+      background: #eaf8ef;
+    }
+
+    .business-added-doc {
+      margin-top: 4px;
+      color: #687996;
+      font-size: 11.2px;
+      line-height: 1.25;
+    }
+
+    .business-added-selected-mark {
+      width: 22px;
+      height: 22px;
+      display: grid;
+      place-items: center;
+      border-radius: 999px;
+      color: #fff;
+      font-size: 13px;
+      font-weight: 900;
+      background: #2bb673;
+      box-shadow: 0 6px 12px rgba(43, 182, 115, 0.18);
+    }
+
+    .business-companion-edit {
+      width: 24px;
+      height: 32px;
+      border-radius: 999px;
+      color: #8b98ad;
+      font-size: 22px;
+      font-weight: 520;
+      background: transparent;
+    }
+
+    .business-companion-quick {
+      margin-top: 13px;
+    }
+
+    .business-companion-quick-title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      color: #263850;
+      font-size: 12.5px;
+      font-weight: 820;
+    }
+
+    .business-companion-quick-title span {
+      color: #718099;
+      font-size: 11px;
+      font-weight: 650;
+    }
+
+    .business-companion-quick-list {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 7px;
+      margin-top: 8px;
+    }
+
+    .business-companion-chip {
+      display: block;
+      min-width: 0;
+      min-height: 36px;
+      padding: 7px 8px;
+      border-radius: 999px;
+      text-align: center;
+      color: #2f56a6;
+      font-size: 12px;
+      font-weight: 780;
+      background: #fff;
+      box-shadow: inset 0 0 0 1px rgba(207, 220, 242, 0.92), 0 5px 12px rgba(26, 43, 79, 0.04);
+    }
+
+    .business-companion-chip strong,
+    .business-companion-chip span {
+      display: block;
+    }
+
+    .business-companion-chip span {
+      margin-top: 4px;
+      color: #718099;
+      font-size: 10.5px;
+      font-weight: 650;
+      line-height: 1.2;
+    }
+
+    .business-companion-chip.is-disabled {
+      color: #98a3b5;
+      background: #f2f4f8;
+      pointer-events: none;
+    }
+
+    .business-companion-layer {
+      position: fixed;
+      inset: 0;
+      z-index: 86;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      background: rgba(13, 27, 51, 0.32);
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: opacity 0.2s ease, visibility 0.2s ease;
+    }
+
+    .business-companion-layer.show {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+
+    .business-companion-panel {
+      width: min(448px, 100%);
+      max-height: 78vh;
+      overflow: auto;
+      padding: 17px 16px calc(18px + var(--safe-bottom));
+      border-radius: 24px 24px 0 0;
+      background:
+        radial-gradient(circle at 92% 2%, rgba(65, 185, 214, 0.12) 0 58px, transparent 59px),
+        linear-gradient(180deg, #ffffff, #f8fbff);
+      box-shadow: 0 -18px 44px rgba(26, 43, 79, 0.18);
+      transform: translateY(100%);
+      transition: transform 0.24s cubic-bezier(0.22, 0.75, 0.27, 1);
+    }
+
+    .business-companion-layer.show .business-companion-panel {
+      transform: translateY(0);
+    }
+
+    .business-companion-panel-head {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .business-companion-panel-head h3 {
+      margin: 0;
+      color: #152544;
+      font-size: 17px;
+      line-height: 1.25;
+    }
+
+    .business-companion-panel-head p {
+      margin-top: 5px;
+      color: #65748c;
+      font-size: 12px;
+      line-height: 1.35;
+    }
+
+    .business-companion-panel-head button {
+      flex: none;
+      padding: 6px 10px;
+      border-radius: 999px;
+      color: #52617a;
+      font-size: 12px;
+      font-weight: 760;
+      background: rgba(242, 246, 255, 0.9);
+    }
+
+    .business-picker-section {
+      margin-top: 15px;
+    }
+
+    .business-picker-section > strong {
+      display: block;
+      color: #263850;
+      font-size: 13px;
+      line-height: 1.3;
+    }
+
+    .business-picker-row {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 27px minmax(0, 1fr);
+      gap: 10px;
+      align-items: center;
+      margin-top: 8px;
+      padding: 10px 11px;
+      border-radius: 17px;
+      text-align: left;
+      background: #ffffff;
+      box-shadow: inset 0 0 0 1px rgba(222, 229, 240, 0.92), 0 6px 16px rgba(26, 43, 79, 0.04);
+    }
+
+    .business-picker-row.is-selected {
+      background: #eef7ff;
+      box-shadow: inset 0 0 0 1px rgba(47, 86, 166, 0.24), 0 7px 18px rgba(47, 86, 166, 0.08);
+    }
+
+    .business-picker-row.is-locked {
+      background: #f3f7ff;
+    }
+
+    .business-picker-check {
+      width: 24px;
+      height: 24px;
+      display: grid;
+      place-items: center;
+      border-radius: 999px;
+      color: #fff;
+      font-size: 13px;
+      font-weight: 900;
+      background: #2bb673;
+      box-shadow: 0 5px 12px rgba(43, 182, 115, 0.18);
+    }
+
+    .business-picker-row:not(.is-selected):not(.is-locked) .business-picker-check {
+      color: transparent;
+      background: #fff;
+      box-shadow: inset 0 0 0 1px rgba(166, 178, 199, 0.66);
+    }
+
+    .business-picker-row b,
+    .business-picker-row em {
+      display: block;
+      min-width: 0;
+      font-style: normal;
+    }
+
+    .business-picker-row b {
+      color: #263850;
+      font-size: 13px;
+      line-height: 1.25;
+    }
+
+    .business-picker-row em {
+      margin-top: 3px;
+      color: #718099;
+      font-size: 11px;
+      line-height: 1.25;
+    }
+
+    .business-picker-confirm {
+      width: 100%;
+      min-height: 44px;
+      margin-top: 16px;
+      border-radius: 999px;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 860;
+      background: linear-gradient(135deg, #2f65c5, #32b6d0);
+      box-shadow: 0 12px 22px rgba(47, 86, 166, 0.18);
+    }
+
+    .business-proxy-panel[hidden] {
+      display: none;
+    }
+
+    .business-proxy-panel strong,
+    .business-traveler-card > strong {
+      display: block;
+      color: #263850;
+      font-size: 13px;
+    }
+
+    .business-passenger-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 6px;
+      margin-top: 8px;
+    }
+
+    .business-passenger-chip {
+      min-width: 0;
+      min-height: 58px;
+      padding: 9px 8px;
+      border-radius: 16px;
+      text-align: left;
+      color: #52617a;
+      background: rgba(255, 255, 255, 0.9);
+      box-shadow: inset 0 0 0 1px rgba(222, 229, 240, 0.86), 0 7px 14px rgba(26, 43, 79, 0.04);
+    }
+
+    .business-passenger-chip strong,
+    .business-passenger-chip span {
+      display: block;
+    }
+
+    .business-passenger-chip strong {
+      color: #263850;
+      font-size: 13px;
+      line-height: 1.2;
+    }
+
+    .business-passenger-chip span {
+      margin-top: 4px;
+      color: #7b8798;
+      font-size: 10.5px;
+    }
+
+    .business-passenger-chip.is-selected {
+      color: #2f56a6;
+      background:
+        radial-gradient(circle at 90% 8%, rgba(65, 185, 214, 0.13), transparent 34px),
+        #eef5ff;
+      box-shadow: inset 0 0 0 1px rgba(47, 86, 166, 0.28), 0 10px 18px rgba(47, 86, 166, 0.09);
+    }
+
+    .business-passenger-chip.is-selected strong {
+      color: #1f4c98;
+    }
+
+    .business-proxy-row,
+    .business-companion-row {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 5px;
+      margin-top: 7px;
+    }
+
+    .business-traveler-main {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 8px;
+      align-items: center;
+      margin-top: 7px;
+      padding: 8px;
+      border-radius: 15px;
+      background: #fff;
+      box-shadow: inset 0 0 0 1px rgba(222, 229, 240, 0.86);
+    }
+
+    .business-traveler-main strong {
+      display: block;
+      color: #1f3150;
+      font-size: 14px;
+    }
+
+    .business-traveler-main span {
+      display: block;
+      margin-top: 3px;
+      color: #7b8798;
+      font-size: 11px;
+    }
+
+    .business-sync-line,
+    .business-fast-note {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 7px;
+      padding: 6px 8px;
+      border-radius: 13px;
+      color: #36547e;
+      font-size: 11.3px;
+      line-height: 1.35;
+      background: rgba(239, 246, 255, 0.8);
+      box-shadow: inset 0 0 0 1px rgba(47, 86, 166, 0.1);
+    }
+
+    .business-id-line {
+      margin-top: 7px;
+      color: #61718a;
+      font-size: 11.2px;
+      line-height: 1.35;
+    }
+
+    .business-id-line strong {
+      color: #263850;
+      font-weight: 820;
+    }
+
+    .business-fast-cta {
+      width: 100%;
+      min-height: 40px;
+      margin-top: 9px;
+      border-radius: 999px;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 850;
+      background: linear-gradient(135deg, #2f56a6, #2f8fd6 62%, #23b3b0);
+      box-shadow: 0 12px 24px rgba(47, 86, 166, 0.18);
+    }
+
+    .business-profile-card {
+      background:
+        radial-gradient(circle at 94% 8%, rgba(74, 123, 200, 0.08) 0 48px, transparent 49px),
+        linear-gradient(135deg, #ffffff, #f7fbff);
+    }
+
+    .business-profile-grid {
+      display: grid;
+      gap: 0;
+      margin-top: 12px;
+      overflow: hidden;
+      border-radius: 15px;
+      background: #f1f5fb;
+      box-shadow: inset 0 0 0 1px rgba(222, 229, 240, 0.82);
+    }
+
+    .business-profile-line {
+      display: grid;
+      grid-template-columns: 30px minmax(0, 1fr) 18px 16px;
+      gap: 8px;
+      align-items: center;
+      padding: 11px 12px;
+      border-radius: 0;
+      background: transparent;
+      box-shadow: none;
+    }
+
+    .business-profile-line + .business-profile-line,
+    .business-member-line {
+      border-top: 1px solid rgba(222, 229, 240, 0.76);
+    }
+
+    .business-profile-line .business-info-icon {
+      width: 30px;
+      height: 30px;
+    }
+
+    .business-profile-line span {
+      display: block;
+      color: #7b8798;
+      font-size: 11px;
+    }
+
+    .business-profile-line strong {
+      display: block;
+      margin-top: 2px;
+      color: #263850;
+      font-size: 12.8px;
+      line-height: 1.28;
+    }
+
+    .business-profile-line strong em {
+      margin-left: 5px;
+      color: #8a96aa;
+      font-size: 11px;
+      font-style: normal;
+      font-weight: 650;
+      white-space: nowrap;
+    }
+
+    .business-profile-line strong > span {
+      display: inline;
+      color: #263850;
+      font-size: inherit;
+    }
+
+    .business-auto-badge {
+      display: inline-flex;
+      width: fit-content;
+      margin-top: 4px;
+      padding: 2px 6px;
+      border-radius: 6px;
+      color: #198c49;
+      font-size: 10px;
+      font-weight: 760;
+      background: rgba(44, 188, 102, 0.1);
+    }
+
+    .business-selected-mark {
+      width: 30px;
+      height: 22px;
+      display: grid;
+      place-items: center;
+      border-radius: 999px;
+      color: transparent;
+      font-size: 0;
+      line-height: 0;
+      overflow: hidden;
+      background: #eaf8ef;
+      box-shadow: none;
+    }
+
+    .business-selected-mark::before {
+      content: "✓";
+      width: 18px;
+      height: 18px;
+      display: grid;
+      place-items: center;
+      border-radius: 999px;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 900;
+      background: #2bb673;
+    }
+
+    .business-added-check {
+      width: 15px;
+      height: 15px;
+      display: grid;
+      place-items: center;
+      border-radius: 999px;
+      color: #fff;
+      font-size: 10px;
+      font-weight: 900;
+      background: #2bb673;
+      box-shadow: none;
+    }
+
+    .business-added-check {
+      display: inline-grid;
+      margin-right: 3px;
+      vertical-align: -2px;
+    }
+
+    .business-profile-arrow {
+      color: #8a96aa;
+      font-size: 19px;
+      line-height: 1;
+      font-weight: 650;
+      background: transparent;
+    }
+
+    .business-mini-action {
+      padding: 5px 10px;
+      border-radius: 999px;
+      color: #2f56a6;
+      font-size: 11.5px;
+      font-weight: 760;
+      background: #fff;
+      box-shadow: inset 0 0 0 1px rgba(47, 86, 166, 0.14);
+    }
+
+    .business-policy-card {
+      background:
+        radial-gradient(circle at 94% 6%, rgba(65, 178, 78, 0.09) 0 50px, transparent 51px),
+        linear-gradient(135deg, #ffffff, #fbfdff);
+    }
+
+    .business-benefit-card {
+      background:
+        radial-gradient(circle at 94% 6%, rgba(47, 86, 166, 0.08) 0 50px, transparent 51px),
+        linear-gradient(135deg, #ffffff, #fbfdff);
+    }
+
+    .business-default-badge {
+      display: inline-flex;
+      align-items: center;
+      margin-left: 6px;
+      padding: 3px 7px;
+      border-radius: 999px;
+      color: #159653;
+      font-size: 10.5px;
+      font-weight: 780;
+      background: rgba(44, 188, 102, 0.11);
+      vertical-align: middle;
+    }
+
+    .business-policy-summary {
+      color: #2f56a6 !important;
+      font-weight: 760;
+    }
+
+    .business-policy-row {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 7px;
+      margin-top: 12px;
+    }
+
+    .business-policy-card .business-strategy-option {
+      min-height: 68px;
+      text-align: left;
+    }
+
+    .business-benefit-row {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+      margin-top: 10px;
+    }
+
+    .business-benefit-row .business-service-option {
+      min-height: 78px;
+    }
+
+    .business-section-label {
+      display: flex;
+      justify-content: space-between;
+      gap: 8px;
+      margin-top: 14px;
+      color: #263850;
+      font-size: 13px;
+      font-weight: 820;
+    }
+
+    .business-section-label span {
+      color: #718099;
+      font-size: 11px;
+      font-weight: 650;
+    }
+
+    .business-workbench-card {
+      background: linear-gradient(135deg, #ffffff, #f7fbff);
+    }
+
+    .business-workbench-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 8px;
+      margin-top: 12px;
+    }
+
+    .business-workbench-cell {
+      min-width: 0;
+      min-height: 72px;
+      padding: 10px 7px;
+      border-radius: 17px;
+      color: #52617a;
+      font-size: 11px;
+      line-height: 1.25;
+      text-align: center;
+      background: rgba(247, 250, 255, 0.86);
+      box-shadow: inset 0 0 0 1px rgba(222, 229, 240, 0.82);
+    }
+
+    .business-workbench-cell .icon {
+      margin: 0 auto 7px;
+      color: #2f56a6;
+    }
+
+    .business-workbench-cell strong {
+      display: block;
+      color: #263850;
+      font-size: 12px;
+    }
+
+    .business-feature-card {
+      margin-top: 14px;
+      padding: 13px;
+      border-radius: 18px;
+      background: linear-gradient(135deg, #ffffff, #f8fbff);
+      box-shadow: inset 0 0 0 1px rgba(207, 220, 242, 0.88), 0 8px 18px rgba(47, 86, 166, 0.05);
+    }
+
+    .business-feature-card h3 {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin: 0;
+      color: #263850;
+      font-size: 14px;
+    }
+
+    .business-feature-card h3 .icon {
+      color: #2f56a6;
+    }
+
+    .business-feature-list {
+      display: grid;
+      gap: 10px;
+      margin-top: 11px;
+    }
+
+    .business-feature-list div {
+      display: grid;
+      grid-template-columns: 24px minmax(0, 1fr);
+      gap: 9px;
+      align-items: start;
+    }
+
+    .business-feature-list .icon {
+      width: 24px;
+      height: 24px;
+      padding: 5px;
+      border-radius: 9px;
+      color: #2f56a6;
+      background: #eef5ff;
+    }
+
+    .business-feature-list strong,
+    .business-feature-list em {
+      display: block;
+      line-height: 1.3;
+    }
+
+    .business-feature-list strong {
+      color: #263850;
+      font-size: 12.5px;
+    }
+
+    .business-feature-list em {
+      margin-top: 2px;
+      color: #718099;
+      font-size: 11px;
+      font-style: normal;
+    }
+
+    .business-feature-foot {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      margin-top: 12px;
+      padding: 8px 10px;
+      border-radius: 13px;
+      color: #718099;
+      font-size: 11px;
+      background: #f0f5fb;
+    }
+
+    .business-home-speed {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 6px;
+      max-width: calc(100% - 88px);
+      margin-top: 10px;
+    }
+
+    .business-home-speed span {
+      min-width: 0;
+      padding: 7px 6px;
+      border-radius: 14px;
+      color: #36547e;
+      font-size: 10.5px;
+      font-weight: 760;
+      line-height: 1.2;
+      background: rgba(255, 255, 255, 0.78);
+      box-shadow: inset 0 0 0 1px rgba(222, 229, 240, 0.78);
+    }
+
+    .business-home-ready {
+      white-space: nowrap;
     }
 
     .business-auto-card {
@@ -2554,6 +3730,15 @@
       box-shadow: inset 0 0 0 1px rgba(207, 220, 242, 0.9);
     }
 
+    .business-profile-grid .business-info-icon {
+      width: 28px;
+      height: 28px;
+      border-radius: 10px;
+      color: #2f56a6;
+      background: #edf4ff;
+      box-shadow: none;
+    }
+
     .business-info-item span {
       display: block;
       color: #7b8798;
@@ -2570,18 +3755,18 @@
     }
 
     .business-member-line {
-      margin-top: 8px;
-      padding: 9px;
-      border-radius: 15px;
-      background: rgba(247, 250, 255, 0.72);
-      box-shadow: inset 0 0 0 1px rgba(222, 229, 240, 0.76);
+      margin-top: 0;
+      padding: 11px 12px;
+      border-radius: 0;
+      background: transparent;
+      box-shadow: none;
     }
 
     .business-member-summary {
       display: grid;
-      grid-template-columns: 28px minmax(0, 1fr) auto;
+      grid-template-columns: 30px minmax(0, 1fr) auto;
       align-items: center;
-      gap: 8px;
+      gap: 10px;
     }
 
     .business-member-copy {
@@ -2694,10 +3879,10 @@
     .business-strategy-option {
       position: relative;
       min-width: 0;
-      min-height: 98px;
-      padding: 10px 9px;
-      border-radius: 18px;
-      text-align: left;
+      min-height: 86px;
+      padding: 12px 8px 10px;
+      border-radius: 14px;
+      text-align: center;
       color: #52617a;
       background: rgba(255, 255, 255, 0.82);
       box-shadow: inset 0 0 0 1px rgba(222, 229, 240, 0.9);
@@ -2713,7 +3898,7 @@
 
     .business-strategy-option strong {
       display: block;
-      margin-top: 8px;
+      margin-top: 5px;
       color: var(--ink);
       font-size: 12.5px;
       line-height: 1.25;
@@ -2728,26 +3913,27 @@
     }
 
     .business-strategy-option.is-selected {
-      background:
-        radial-gradient(circle at 90% 2%, rgba(74, 123, 200, 0.16), transparent 46%),
-        color-mix(in srgb, var(--detail) 8%, #fff);
-      box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--detail) 28%, #fff), 0 10px 20px color-mix(in srgb, var(--detail) 10%, transparent);
+      background: #f7fbff;
+      box-shadow: inset 0 0 0 1.5px #2f56a6, 0 10px 20px rgba(47, 86, 166, 0.09);
       transform: translateY(-1px);
     }
 
     .business-strategy-option.is-selected::after,
     .business-service-option.is-selected::after {
-      content: "";
+      content: "✓";
       position: absolute;
       right: 9px;
       top: 9px;
-      width: 15px;
-      height: 15px;
+      width: 17px;
+      height: 17px;
+      display: grid;
+      place-items: center;
       border-radius: 999px;
-      background:
-        linear-gradient(135deg, transparent 42%, #fff 43% 56%, transparent 57%),
-        linear-gradient(45deg, transparent 52%, #fff 53% 66%, transparent 67%),
-        linear-gradient(135deg, var(--detail), var(--detail-2));
+      color: #fff;
+      font-size: 12px;
+      font-weight: 900;
+      background: #2bb673;
+      box-shadow: 0 4px 8px rgba(43, 182, 115, 0.18);
     }
 
     .business-strategy-more {
@@ -2760,6 +3946,17 @@
       font-weight: 760;
       background: color-mix(in srgb, var(--detail) 6%, #fff);
       box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--detail) 14%, #fff);
+    }
+
+    .business-strategy-more.compact {
+      width: auto;
+      min-height: 30px;
+      margin-top: 0;
+      padding: 0 10px;
+      border-radius: 999px;
+      color: #2f56a6;
+      background: #f2f6ff;
+      box-shadow: inset 0 0 0 1px rgba(47, 86, 166, 0.12);
     }
 
     .business-advanced-strategy {
@@ -4169,7 +5366,7 @@
     .app.view-pet-detail .pet-detail,
     .app.view-luggage-detail .luggage-detail {
       display: block;
-      animation: detailIn 260ms ease both;
+      animation: detailIn 260ms ease;
     }
 
     .business-detail {
@@ -4423,7 +5620,7 @@
 
     .business-trip-tabs {
       display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 4px;
       margin-top: 12px;
       padding: 4px;
@@ -5515,7 +6712,7 @@
       }
       to {
         opacity: 1;
-        transform: translateX(0);
+        transform: none;
       }
     }
 
@@ -5806,7 +7003,7 @@
           <div class="brand-bubbles"><span></span><span></span><span></span></div>
           <div class="brand-grass"></div>
           <svg class="brand-plane"><use href="#i-plane"/></svg>
-          <div class="brand-collapsed">民航官方直销｜每一次起飞，都藏着你的身份与牵挂</div>
+          <div class="brand-collapsed">机票官方直销｜每一次起飞，都藏着你的身份与牵挂</div>
           <div class="brand-copy">
             <div class="brand-title">每一次起飞，都藏着你的身份与牵挂</div>
             <button class="brand-cta">40+航司官方直销</button>
@@ -5815,10 +7012,6 @@
       </div>
 
       <section class="search-card" aria-label="机票搜索">
-        <div class="brand-strip">
-          <span class="brand-mark">✈</span>
-          <span>民航官方直销平台</span>
-        </div>
         <div class="tabs" role="tablist" aria-label="产品类型">
           <button class="tab-active" role="tab" aria-selected="true">国内机票</button>
           <span class="tab-divider"></span>
@@ -5880,25 +7073,22 @@
         </div>
       </div>
 
-      <section class="role-intro ai-role-selector" aria-label="AI角色选择器" data-role-selector>
+      <section class="role-intro ai-role-selector" aria-label="出行场景切换器" data-role-selector>
         <div class="role-selector-expanded">
-          <div class="role-guide-row">
-            <span class="role-ai-avatar"><svg class="icon"><use href="#i-sparkles"/></svg></span>
-            <div class="role-guide-copy">
-              <span class="selector-kicker">AI 角色助手</span>
-              <h2>小横：张先生，这次是为谁出发？</h2>
-              <p>选一个出行身份，我来帮你匹配更合适的机票方案</p>
-            </div>
-            <button class="role-edit" type="button" data-sort-open>编辑角色</button>
-          </div>
           <div class="role-meta-row">
             <span class="last-role-note" data-last-role-note></span>
+            <button class="role-edit" type="button" data-sort-open>编辑</button>
+          </div>
+          <div class="role-guide-row">
+            <div class="role-guide-copy">
+              <p>按本次出行身份切换，快速进入对应订票能力</p>
+            </div>
           </div>
           <div class="role-pick-grid" aria-label="核心角色选择">
             <button class="role-pick-card active" type="button" data-selector-target="business">
               <span class="role-pick-icon"><svg class="icon"><use href="#i-briefcase"/></svg></span>
               <strong>职场</strong>
-              <em>公务出行</em>
+              <em>商旅速通</em>
             </button>
             <button class="role-pick-card" type="button" data-selector-target="elderly">
               <span class="role-pick-icon"><svg class="icon"><use href="#i-heart"/></svg></span>
@@ -5915,11 +7105,18 @@
               <strong>自由</strong>
               <em>随心旅行</em>
             </button>
-          </div>
-          <div class="support-pick-row" aria-label="补充专区入口">
-            <button type="button" data-selector-target="pet"><svg class="icon sm"><use href="#i-paw"/></svg>宠物</button>
-            <button type="button" data-selector-target="services"><svg class="icon sm"><use href="#i-grid"/></svg>服务</button>
-            <button type="button" data-selector-target="airlines"><svg class="icon sm"><use href="#i-plane"/></svg>航司</button>
+            <button class="role-pick-card is-support" type="button" data-selector-target="pet">
+              <span class="role-pick-icon"><svg class="icon"><use href="#i-paw"/></svg></span>
+              <strong>宠物</strong>
+            </button>
+            <button class="role-pick-card is-support" type="button" data-selector-target="services">
+              <span class="role-pick-icon"><svg class="icon"><use href="#i-grid"/></svg></span>
+              <strong>服务</strong>
+            </button>
+            <button class="role-pick-card is-support" type="button" data-selector-target="airlines">
+              <span class="role-pick-icon"><svg class="icon"><use href="#i-plane"/></svg></span>
+              <strong>航司</strong>
+            </button>
           </div>
         </div>
       </section>
@@ -5940,18 +7137,18 @@
         <div class="home-card role-card">
           <div class="home-section-head">
             <div class="home-section-title">
-              <span class="role-badge"><svg class="icon sm"><use href="#i-sparkles"/></svg>小横推荐 · 你最近常用公务出行</span>
-              <h3>职场奔赴 · 公务出行</h3>
-              <p>为工作奔赴山海，帮你优先找稳妥、省时、好报销的机票</p>
+              <span class="role-badge">常用推荐</span>
+              <h3 class="role-title-line"><span class="role-title-icon"><svg class="icon"><use href="#i-briefcase"/></svg></span>职场奔赴 · 商旅速通</h3>
+              <p class="business-home-ready">不止是订票，是商旅人的专属通道</p>
             </div>
             <button class="section-toggle" type="button" data-collapse-toggle aria-label="收起公务出行">
               <svg class="icon"><use href="#i-down"/></svg>
             </button>
           </div>
           <div class="home-card-content">
-            <div class="role-tags"><span>极速预订</span><span>报销无忧</span><span>公务优选</span></div>
+            <div class="role-tags"><span>资料预填写</span><span>商旅排序</span><span>报销自动发送</span></div>
             <span class="role-visual"><svg class="icon"><use href="#i-briefcase"/></svg></span>
-            <button class="home-cta" data-open-detail="business" data-role-key="business">进入公务出行 <svg class="icon sm"><use href="#i-chevron"/></svg></button>
+            <button class="home-cta" data-open-detail="business" data-role-key="business">进入商旅速通 <svg class="icon sm"><use href="#i-chevron"/></svg></button>
           </div>
         </div>
       </section>
@@ -5960,16 +7157,16 @@
         <div class="home-card role-card">
           <div class="home-section-head">
             <div class="home-section-title">
-              <h3>岁岁安康 · 长辈安心出行</h3>
-              <p>自己订也看得清，替父母订也能放心</p>
+              <span class="role-badge">常用推荐</span>
+              <h3 class="role-title-line"><span class="role-title-icon"><svg class="icon"><use href="#i-heart"/></svg></span>岁岁安康 · 长辈出行</h3>
+              <p>少操作、大字看、行程同步给家人</p>
             </div>
             <button class="section-toggle" type="button" data-collapse-toggle aria-label="收起长辈代订">
               <svg class="icon"><use href="#i-down"/></svg>
             </button>
           </div>
           <div class="home-card-content">
-            <p class="role-story">少一点操作，多一份安心。大字浏览、语音预订和家人同步，都为长辈出行准备好。</p>
-            <div class="role-tags"><span>大字浏览</span><span>语音预订</span><span>家人同步</span><span>白天航班</span></div>
+            <div class="role-tags"><span>大字浏览</span><span>白天航班</span><span>家人同步</span></div>
             <span class="role-visual"><svg class="icon"><use href="#i-heart"/></svg></span>
             <button class="home-cta" data-open-detail="elderly" data-role-key="elderly">进入长辈出行 <svg class="icon sm"><use href="#i-chevron"/></svg></button>
           </div>
@@ -5980,7 +7177,8 @@
         <div class="home-card role-card">
           <div class="home-section-head">
             <div class="home-section-title">
-              <h3>童心同行 · 亲子家庭出行</h3>
+              <span class="role-badge">常用推荐</span>
+              <h3 class="role-title-line"><span class="role-title-icon"><svg class="icon"><use href="#i-baby"/></svg></span>童心同行 · 亲子出行</h3>
               <p>带娃出行，把票、座位和证件一次理清</p>
             </div>
             <button class="section-toggle" type="button" data-collapse-toggle aria-label="收起亲子出行">
@@ -5988,8 +7186,7 @@
             </button>
           </div>
           <div class="home-card-content">
-            <p class="role-story">儿童票、相邻座、证件和餐食提前准备好，让带娃出行少一点慌乱。</p>
-            <div class="role-tags"><span>儿童票提醒</span><span>相邻座</span><span>儿童餐</span><span>证件提醒</span></div>
+            <div class="role-tags"><span>儿童票提醒</span><span>相邻座位</span><span>证件/餐食</span></div>
             <span class="role-visual"><svg class="icon"><use href="#i-baby"/></svg></span>
             <button class="home-cta" data-open-detail="family" data-role-key="family">进入亲子出行 <svg class="icon sm"><use href="#i-chevron"/></svg></button>
           </div>
@@ -6000,18 +7197,18 @@
         <div class="home-card role-card">
           <div class="home-section-head">
             <div class="home-section-title">
-              <h3>自我奔赴 · 个人休闲旅行</h3>
-              <p>放下生活琐碎，为自己开启一场自由远航</p>
+              <span class="role-badge">常用推荐</span>
+              <h3 class="role-title-line"><span class="role-title-icon"><svg class="icon"><use href="#i-map"/></svg></span>自我奔赴 · 个人出游</h3>
+              <p>给自己一段轻松行程，低价和灵活都照顾</p>
             </div>
             <button class="section-toggle" type="button" data-collapse-toggle aria-label="收起自由旅行">
               <svg class="icon"><use href="#i-down"/></svg>
             </button>
           </div>
           <div class="home-card-content">
-            <p class="role-story">不一定要赶路，也可以只是去看一场海风、一座山，和更松弛的自己。</p>
-            <div class="role-tags"><span>低价优选</span><span>灵活退改</span><span>随心出行</span></div>
+            <div class="role-tags"><span>低价优先</span><span>灵活退改</span><span>自由目的地</span></div>
             <span class="role-visual"><svg class="icon"><use href="#i-map"/></svg></span>
-            <button class="home-cta" data-open-detail="free" data-role-key="free">开启自由旅行 <svg class="icon sm"><use href="#i-chevron"/></svg></button>
+            <button class="home-cta" data-open-detail="free" data-role-key="free">开启个人出游 <svg class="icon sm"><use href="#i-chevron"/></svg></button>
           </div>
         </div>
       </section>
@@ -6181,219 +7378,227 @@
             <svg class="icon"><use href="#i-arrow-left"/></svg>
           </button>
           <div class="detail-title">
-            <h1>职场奔赴 · 公务出行</h1>
+            <h1>职场奔赴 · 商旅速通</h1>
             <div class="business-ai-strip">
               <span class="business-ai-orb"><svg class="icon"><use href="#i-sparkles"/></svg></span>
               <span>
-                <strong class="business-ai-title">小横：张先生，常飞路线、报销信息和航司会员已带入，确认日期即可生成公务机票方案。</strong>
+                <strong class="business-ai-title" data-business-ai-title>张先生，小横已为你带入本人资料、常用路线和商旅偏好，确认后可查看商旅航班。</strong>
               </span>
             </div>
           </div>
         </header>
 
         <div class="detail-body">
-          <section class="detail-card business-trip-card">
-            <h2><svg class="icon"><use href="#i-plane"/></svg>公务行程确认</h2>
-            <p>常用公务路线已为你准备好，确认日期即可生成方案</p>
+          <section class="detail-card business-fast-card">
+            <div class="business-fast-head">
+              <div>
+                <h2><svg class="icon"><use href="#i-plane"/></svg>公务行程与乘机人</h2>
+                <p>常飞路线和常用乘机人已准备好，确认后进入按商旅偏好排序的航班列表。</p>
+              </div>
+            </div>
+
             <div class="business-trip-tabs" role="tablist" aria-label="公务行程类型">
               <button class="is-selected" type="button" data-business-trip-type="oneway">单程</button>
               <button type="button" data-business-trip-type="roundtrip">往返</button>
-              <button type="button" data-business-trip-type="multi">多程</button>
             </div>
-            <div class="business-trip-box">
-              <div class="business-city-row">
-                <button class="business-city-button" type="button" data-business-city="from">
+
+            <div class="business-demand-card">
+              <div class="business-demand-main">
+                <button class="business-demand-city" type="button" data-business-city="from">
                   <strong data-business-from-city>北京</strong>
                   <span>出发城市</span>
                 </button>
-                <button class="business-swap" type="button" data-business-swap aria-label="交换出发到达城市">
+                <button class="business-demand-swap" type="button" data-business-swap aria-label="交换出发到达城市">
                   <svg class="icon"><use href="#i-refresh"/></svg>
                 </button>
-                <button class="business-city-button" type="button" data-business-city="to">
+                <button class="business-demand-city" type="button" data-business-city="to">
                   <strong data-business-to-city>上海</strong>
                   <span>到达城市</span>
                 </button>
               </div>
-              <div class="business-date-row">
-                <button class="business-date-button" type="button" data-business-depart-date>
+              <div class="business-demand-dates is-oneway" data-business-date-row>
+                <button class="business-demand-date" type="button" data-business-depart-date>
                   <span>出发日期</span>
                   <strong data-business-depart-date-text>5月15日 周四</strong>
                 </button>
-                <button class="business-date-button is-placeholder" type="button" data-business-return-date>
+                <button class="business-demand-date is-placeholder" type="button" data-business-return-date>
                   <span>返程日期</span>
                   <strong data-business-return-date-text>返程日期（可选）</strong>
                 </button>
               </div>
+
+              <div class="business-route-panel">
+                <div class="business-route-title compact">
+                  <strong>常飞公务路线</strong>
+                </div>
+                <div class="route-grid business-route-grid">
+                  <button class="route-chip is-selected" data-business-route data-from="北京" data-to="上海" data-date="5月15日">
+                    <strong>北京 → 上海</strong><span>近12个月6次</span>
+                  </button>
+                  <button class="route-chip" data-business-route data-from="北京" data-to="深圳" data-date="5月15日">
+                    <strong>北京 → 深圳</strong><span>上次飞行28天前</span>
+                  </button>
+                  <button class="route-chip" data-business-route data-from="北京" data-to="广州" data-date="5月15日">
+                    <strong>北京 → 广州</strong><span>近12个月3次</span>
+                  </button>
+                </div>
+              </div>
             </div>
 
-            <div class="business-route-title">
-              <strong>常飞公务路线</strong>
-              <span>一键切换常用出差路线</span>
-            </div>
-            <div class="route-grid business-route-grid">
-              <button class="route-chip is-selected" data-business-route data-from="北京" data-to="上海" data-date="5月15日">
-                <strong>北京 → 上海</strong><span>高频航线</span>
-              </button>
-              <button class="route-chip" data-business-route data-from="北京" data-to="深圳" data-date="5月15日">
-                <strong>北京 → 深圳</strong><span>科技差旅</span>
-              </button>
-              <button class="route-chip" data-business-route data-from="北京" data-to="广州" data-date="5月15日">
-                <strong>北京 → 广州</strong><span>商务会面</span>
-              </button>
-            </div>
           </section>
 
-          <section class="detail-card business-auto-card">
-            <div class="business-auto-head">
+          <section class="detail-card business-profile-card">
+            <div class="business-layer-head">
               <div>
-                <h2><svg class="icon"><use href="#i-users"/></svg>小横已帮你预填公务资料</h2>
-                <p>出行人、报销信息和航司会员已准备好，确认后即可查票</p>
-              </div>
-              <button class="business-switch" type="button" data-business-traveler>修改</button>
-            </div>
-            <div class="business-info-group">
-              <div class="business-info-group-title">订票资料</div>
-              <div class="business-info-list">
-                <div class="business-info-item">
-                  <span class="business-info-icon"><svg class="icon sm"><use href="#i-users"/></svg></span>
-                  <div><span>出行人</span><strong>张先生 · 本人</strong></div>
-                </div>
-                <div class="business-info-item">
-                  <span class="business-info-icon"><svg class="icon sm"><use href="#i-receipt"/></svg></span>
-                  <div><span>报销信息</span><strong>单位抬头 / 接收邮箱</strong></div>
-                </div>
-              </div>
-              <div class="business-member-line" data-business-member-line>
-                <div class="business-member-summary">
-                  <span class="business-info-icon"><svg class="icon sm"><use href="#i-card"/></svg></span>
-                  <span class="business-member-copy"><span>航司会员</span><strong>厦航白鹭卡、东方万里行已匹配</strong></span>
-                  <button class="business-card-open" type="button" data-business-card-open>查看</button>
-                </div>
-                <div class="business-member-detail" data-business-member-detail>
-                  <div class="business-member-mini"><span>厦门航空 · 白鹭卡</span><strong>可用里程</strong></div>
-                  <div class="business-member-mini"><span>东方航空 · 东方万里行</span><strong>可用积分</strong></div>
-                  <button class="business-member-mini business-member-add" type="button" data-business-card-add>添加卡片</button>
-                </div>
+                <h2><svg class="icon"><use href="#i-users"/></svg>我的差旅资料</h2>
+                <p>订票资料默认带入，必要时再改。</p>
               </div>
             </div>
-            <div class="business-info-group">
-              <div class="business-info-group-title">订后自动处理</div>
-              <div class="business-info-list">
-                <div class="business-info-item">
-                  <span class="business-info-icon"><svg class="icon sm"><use href="#i-bell"/></svg></span>
-                  <div><span>行程通知</span><strong>出票后自动发送</strong></div>
+
+            <div class="business-profile-grid">
+              <div class="business-profile-line">
+                <span class="business-info-icon"><svg class="icon sm"><use href="#i-card"/></svg></span>
+                <div>
+                  <strong><span data-business-profile-traveler>张先生 · 本人</span><em data-business-profile-id>身份证 ****1234</em></strong>
                 </div>
-                <div class="business-info-item">
-                  <span class="business-info-icon"><svg class="icon sm"><use href="#i-file"/></svg></span>
-                  <div><span>报销资料</span><strong>行程单/凭证自动归档</strong></div>
+                <span class="business-selected-mark" aria-label="已选中"></span>
+                <button class="business-profile-arrow" type="button" data-business-traveler aria-label="修改出行人资料">›</button>
+              </div>
+              <div class="business-profile-line">
+                <span class="business-info-icon"><svg class="icon sm"><use href="#i-receipt"/></svg></span>
+                <div>
+                  <strong data-business-profile-reimburse>上海速通信息科技有限公司 <em>z***@suton.com</em></strong>
                 </div>
+                <span class="business-selected-mark" aria-label="已选中"></span>
+                <button class="business-profile-arrow" type="button" data-business-traveler aria-label="修改报销信息">›</button>
+              </div>
+              <div class="business-profile-line">
+                <span class="business-info-icon"><svg class="icon sm"><use href="#i-file"/></svg></span>
+                <div>
+                  <strong>出票后发送 / 报销资料</strong>
+                  <span class="business-auto-badge">发送至报销邮箱</span>
+                </div>
+                <span class="business-selected-mark" aria-label="已选中"></span>
+                <button class="business-profile-arrow" type="button" data-business-traveler aria-label="修改自动处理设置">›</button>
               </div>
             </div>
           </section>
 
-          <section class="detail-card business-strategy-card">
-            <h2><svg class="icon"><use href="#i-sparkles"/></svg>小横已按公务场景匹配</h2>
-            <p>优先选择准点、省时、可累积会员权益的航班</p>
-            <div class="business-strategy-core" data-business-options>
-              <button class="business-strategy-option is-selected" data-business-strategy data-strategy-level="core" data-preview-label="准点优先">
-                <svg class="icon"><use href="#i-check"/></svg>
-                <strong>准点稳妥</strong>
-                <span>优先准点率高、航变风险低</span>
-              </button>
-              <button class="business-strategy-option is-selected" data-business-strategy data-strategy-level="core" data-preview-label="省时直达">
-                <svg class="icon"><use href="#i-plane"/></svg>
-                <strong>省时直达</strong>
-                <span>优先短时长、少中转</span>
-              </button>
-              <button class="business-strategy-option is-selected" data-business-strategy data-strategy-level="core" data-preview-label="可累积航司会员积分">
-                <svg class="icon"><use href="#i-card"/></svg>
-                <strong>航司会员优先</strong>
-                <span>优先匹配可累积积分航司</span>
+          <section class="detail-card business-companion-card">
+            <div class="business-companion-head">
+              <div>
+                <h2 data-business-companion-title><svg class="icon"><use href="#i-users"/></svg>本次同行</h2>
+                <p data-business-companion-copy>张先生本人已带入，可添加同事一起出行</p>
+              </div>
+            </div>
+            <div class="business-companion-empty" data-business-companion-empty>
+              <button type="button" data-companion-picker-open>
+                <strong>+ 添加同行人</strong>
+                <span>从乘机人列表选择，添加后同程一起出票</span>
               </button>
             </div>
-            <button class="business-strategy-more" type="button" data-business-strategy-more>调整更多策略</button>
-            <div class="business-advanced-strategy" data-business-advanced hidden>
-              <button class="business-strategy-chip" type="button" data-business-strategy data-strategy-level="advanced" data-preview-label="屏蔽红眼航班">屏蔽红眼航班</button>
-              <button class="business-strategy-chip" type="button" data-business-strategy data-strategy-level="advanced" data-preview-label="减少中转/绕飞">减少中转/绕飞</button>
-              <button class="business-strategy-chip" type="button" data-business-strategy data-strategy-level="advanced" data-preview-label="改签灵活优先">改签灵活优先</button>
+            <div class="business-selected-companions" data-business-selected-companions hidden></div>
+            <div class="business-companion-quick">
+              <div class="business-companion-quick-title">
+                <strong>快速添加同行</strong>
+              </div>
+              <div class="business-companion-quick-list" data-business-companion-quick></div>
             </div>
           </section>
 
-          <section class="detail-card">
-            <h2><svg class="icon"><use href="#i-plus"/></svg>本次可选服务</h2>
-            <p>按需添加，随本次公务行程使用</p>
-            <div class="business-service-grid">
-              <button class="business-service-option is-selected" data-business-service data-service-key="checkin" data-preview-label="自动值机提醒">
-                <svg class="icon"><use href="#i-check"/></svg>
-                <strong>自动值机</strong>
-                <span>起飞前提醒办理</span>
+          <section class="detail-card business-policy-card">
+            <div class="business-layer-head">
+              <div>
+                <h2><svg class="icon"><use href="#i-sparkles"/></svg>商旅偏好</h2>
+              </div>
+            </div>
+            <div class="business-policy-row" data-business-options>
+              <button class="business-strategy-option is-selected" data-business-strategy data-preview-label="准点稳妥">
+                <strong>准点稳妥</strong><span>优先展示稳定航班</span>
               </button>
-              <button class="business-service-option" data-business-service data-service-key="pickup" data-preview-label="已包含接送机服务">
-                <svg class="icon"><use href="#i-car"/></svg>
-                <strong>接送机</strong>
-                <span>可使用常用公司/住址</span>
+              <button class="business-strategy-option is-selected" data-business-strategy data-preview-label="省时直达">
+                <strong>省时直达</strong><span>优先短时长航班</span>
               </button>
-              <button class="business-service-option" data-business-service data-service-key="security" data-preview-label="已包含快速安检">
-                <svg class="icon"><use href="#i-shield"/></svg>
-                <strong>快速安检</strong>
-                <span>减少机场排队时间</span>
+              <button class="business-strategy-option is-selected" data-business-strategy data-preview-label="航司会员优先">
+                <strong>航司会员优先</strong><span>优先展示可累积会员权益的航班</span>
               </button>
-              <button class="business-service-option" data-business-service data-service-key="lounge" data-preview-label="已包含贵宾休息室">
-                <svg class="icon"><use href="#i-briefcase"/></svg>
-                <strong>贵宾休息室</strong>
-                <span>候机更安静</span>
+              <button class="business-strategy-option is-selected" data-business-strategy data-preview-label="报销凭证发送">
+                <strong>报销凭证发送</strong><span>出票后发票/行程单发送至报销邮箱</span>
+              </button>
+              <button class="business-strategy-option is-selected" data-business-strategy data-preview-label="改签灵活">
+                <strong>改签灵活</strong><span>优先展示退改更灵活的航班</span>
+              </button>
+              <button class="business-strategy-option is-selected" data-business-strategy data-preview-label="减少中转">
+                <strong>减少中转</strong><span>优先直飞，少中转</span>
+              </button>
+              <button class="business-strategy-option is-selected" data-business-strategy data-preview-label="屏蔽红眼">
+                <strong>屏蔽红眼</strong><span>尽量不推荐夜间红眼航班</span>
+              </button>
+              <button class="business-strategy-option is-selected" data-business-strategy data-preview-label="头等/公务舱">
+                <strong>头等/公务舱</strong><span>按历史偏好优先展示高舱等</span>
               </button>
             </div>
-            <div class="business-service-hint" data-business-service-hint>可使用常用公司/住址接送地址</div>
           </section>
 
-          <section class="detail-card business-plan-preview" data-business-preview>
-            <h2><svg class="icon"><use href="#i-sparkles"/></svg>即将生成公务机票方案</h2>
-            <p>小横将按以下方向为你生成方案：</p>
-            <ul class="business-preview-list" data-business-preview-list>
-              <li>准点优先</li>
-              <li>省时直达</li>
-              <li>可累积航司会员积分</li>
-              <li>报销资料自动归档</li>
-            </ul>
+          <section class="detail-card business-workbench-card">
+            <div class="business-layer-head">
+              <div>
+                <h2><svg class="icon"><use href="#i-grid"/></svg>我的差旅工具</h2>
+              </div>
+            </div>
+            <div class="business-workbench-grid">
+              <button class="business-workbench-cell" type="button" data-business-tool="历史行程单"><svg class="icon"><use href="#i-refresh"/></svg><strong>历史行程单</strong></button>
+              <button class="business-workbench-cell" type="button" data-business-tool="报销凭证"><svg class="icon"><use href="#i-receipt"/></svg><strong>报销凭证</strong></button>
+              <button class="business-workbench-cell" type="button" data-business-tool="行程同步设置"><svg class="icon"><use href="#i-bell"/></svg><strong>行程同步</strong></button>
+            </div>
           </section>
         </div>
 
         <div class="detail-cta-bar">
-          <button class="detail-main-cta" data-business-query>生成公务机票方案</button>
-          <div class="detail-cta-sub" data-business-cta-sub>已带入出行人/报销/会员信息 · 已选 3 项策略 · 1 项服务</div>
+          <button class="detail-main-cta" data-business-query>查看 北京→上海 商旅航班</button>
+          <div class="detail-cta-sub" data-business-cta-sub>张先生 · 北京→上海 · 5月15日出发 · 已选 8 项偏好</div>
         </div>
 
-        <div class="business-card-layer" data-business-card-layer>
-          <div class="business-card-panel" role="dialog" aria-modal="true" aria-label="我的常旅卡">
-            <h3>我的常旅卡</h3>
-            <div class="business-card-list">
-              <div class="business-card-row"><div><strong>厦门航空 白鹭卡</strong><span>普通卡 · 可用里程</span></div><svg class="icon"><use href="#i-check"/></svg></div>
-              <div class="business-card-row"><div><strong>东方航空 东方万里行</strong><span>普通卡 · 可用积分</span></div><svg class="icon"><use href="#i-check"/></svg></div>
+        <div class="business-companion-layer" data-business-companion-layer>
+          <div class="business-companion-panel" role="dialog" aria-modal="true" aria-label="选择同行人">
+            <div class="business-companion-panel-head">
+              <div>
+                <h3>从乘机人库选择同行人</h3>
+                <p>本人已默认带入，可勾选同事一起出行</p>
+              </div>
+              <button type="button" data-companion-picker-close>关闭</button>
             </div>
-            <div class="business-card-actions">
-              <button class="business-card-add" type="button" data-business-card-add>添加卡片</button>
-              <button class="business-card-close" type="button" data-business-card-close>关闭</button>
+            <div class="business-picker-section">
+              <strong>主乘机人</strong>
+              <div class="business-picker-row is-locked">
+                <span class="business-picker-check">✓</span>
+                <div><b>张先生 · 本人</b><em>已作为本次公务行程主乘机人</em></div>
+              </div>
             </div>
+            <div class="business-picker-section">
+              <strong>常用同行</strong>
+              <div data-companion-picker-list></div>
+            </div>
+            <button class="business-picker-confirm" type="button" data-companion-picker-confirm>确认添加 0 位同行</button>
           </div>
         </div>
 
         <div class="business-plan-layer" data-business-plan-layer>
           <div class="business-plan-panel" role="dialog" aria-modal="true" aria-label="公务机票方案">
-            <h3>已生成 3 个公务机票方案</h3>
-            <p data-business-plan-copy>已按 3 项公务策略和 1 项服务生成方案</p>
+            <h3>即将查看商旅航班</h3>
+            <p data-business-plan-copy>将按 8 项商旅偏好进入航班列表</p>
             <div class="business-plan-list">
               <div class="business-plan-item">
                 <span class="business-plan-index">1</span>
-                <div><strong>准点优先</strong><span>适合会议日程</span></div>
+                <div><strong>准点稳妥</strong><span>优先展示稳定航班</span></div>
               </div>
               <div class="business-plan-item">
                 <span class="business-plan-index">2</span>
-                <div><strong>最短时长</strong><span>适合赶时间</span></div>
+                <div><strong>省时直达</strong><span>优先短时长、少中转</span></div>
               </div>
               <div class="business-plan-item">
                 <span class="business-plan-index">3</span>
-                <div><strong>航司会员优先</strong><span>可累积积分</span></div>
+                <div><strong>会员优先</strong><span>优先展示可累积权益航司</span></div>
               </div>
             </div>
             <button class="business-plan-action" type="button" data-business-list>查看航班列表</button>
@@ -6946,7 +8151,7 @@
       let pendingHomeTarget = "";
       let toastTimer = 0;
       let voiceTimer = 0;
-      const defaultHomeOrder = ["business", "elderly", "family", "free"];
+      const defaultHomeOrder = ["business", "family", "elderly", "free"];
       const sectionLabels = {
         business: "职场",
         elderly: "长辈",
@@ -6960,15 +8165,16 @@
         free: "i-map"
       };
       const roleTitles = {
-        business: "公务出行",
-        elderly: "长辈安心出行",
-        family: "亲子家庭出行",
-        free: "个人休闲旅行",
+        business: "商旅速通",
+        elderly: "长辈出行",
+        family: "亲子出行",
+        free: "个人出游",
         pet: "宠物出行",
         services: "服务专区",
         airlines: "航空公司专区"
       };
-      const orderStorageKey = "flightRoleSectionOrder";
+      const coreRoleKeys = ["business", "elderly", "family", "free"];
+      const orderStorageKey = "flightRoleSectionOrderV2";
       const collapseStorageKey = "flightRoleCollapsedSections";
       const lastRoleStorageKey = "flightLastRole";
 
@@ -6987,7 +8193,7 @@
         const examples = document.querySelector("[data-ai-examples]");
         examples?.classList.remove("show");
         if (mode === "role") {
-          aiTitle.textContent = "AI角色订票助手";
+          aiTitle.textContent = "出行场景助手";
           aiPrompt.textContent = "“你可以说：我要出差 / 给爸妈订票 / 带孩子出行 / 自己出去玩”";
           aiResult.textContent = "选择一个例子，我会帮你高亮对应的角色入口。";
           aiAction.textContent = "先自己看看";
@@ -7061,6 +8267,14 @@
 
       const loadHomeOrder = () => normalizeOrder(readJsonStorage(orderStorageKey, defaultHomeOrder));
 
+      const syncFirstRole = (order = loadHomeOrder()) => {
+        const normalized = normalizeOrder(order);
+        const firstRole = normalized.find((key) => coreRoleKeys.includes(key)) || "business";
+        document.querySelectorAll("[data-role-section]").forEach((section) => {
+          section.classList.toggle("is-first-role", section.dataset.roleSection === firstRole);
+        });
+      };
+
       const refreshHomeCollections = () => {
         navButtons = Array.from(nav.querySelectorAll("button[data-target]"));
         sections = navButtons
@@ -7076,12 +8290,14 @@
           const section = document.querySelector(`[data-home-section="${key}"]`);
           const selectorButton = document.querySelector(`.role-pick-card[data-selector-target="${key}"]`);
           const selectorGrid = document.querySelector(".role-pick-grid");
+          const firstSupportSelector = selectorGrid?.querySelector(".role-pick-card.is-support");
           const firstSupportNav = nav.querySelector('[data-target="pet"]');
           if (navButton && firstSupportNav) nav.insertBefore(navButton, firstSupportNav);
           if (section && anchor) anchor.before(section);
-          if (selectorButton && selectorGrid) selectorGrid.appendChild(selectorButton);
+          if (selectorButton && selectorGrid) selectorGrid.insertBefore(selectorButton, firstSupportSelector || null);
         });
         refreshHomeCollections();
+        syncFirstRole(normalized);
         window.setTimeout(() => requestScrollState(), 0);
       };
 
@@ -7179,11 +8395,8 @@
       const syncLastRole = () => {
         const lastRole = readJsonStorage(lastRoleStorageKey, "business") || "business";
         const note = document.querySelector("[data-last-role-note]");
-        document.querySelectorAll("[data-role-section]").forEach((section) => {
-          section.classList.toggle("is-last-role", section.dataset.roleSection === lastRole);
-        });
         if (note && lastRole && roleTitles[lastRole]) {
-          note.textContent = `上次常用：${roleTitles[lastRole]}`;
+          note.textContent = `常用场景：${roleTitles[lastRole]}`;
           note.classList.add("show");
         } else {
           note?.classList.remove("show");
@@ -7419,22 +8632,253 @@
       };
 
       const getBusinessQueryType = () => businessTripState.returnDate ? "roundtrip" : "oneway";
+      const businessTravelers = {
+        self: {
+          label: "张先生",
+          display: "张先生 · 本人",
+          meta: "证件号 110101********1234",
+          profile: "张先生 · 本人",
+          id: "110101********1234",
+          idShort: "身份证 ****1234",
+          reimburse: "上海速通信息科技有限公司",
+          reimburseHtml: "上海速通信息科技有限公司 <em>z***@suton.com</em>",
+          member: "厦航白鹭卡、东方万里行已匹配",
+          sync: "出票后抄送本人邮箱"
+        },
+        wang: {
+          label: "王总",
+          display: "王总 · 代订对象",
+          meta: "证件号 110101********7788",
+          profile: "王总 · 代订",
+          id: "110101********7788",
+          idShort: "身份证 ****7788",
+          reimburse: "上海速通信息科技有限公司",
+          reimburseHtml: "上海速通信息科技有限公司 <em>w***@suton.com</em>",
+          member: "国航知音卡、东方万里行已匹配",
+          sync: "出票后抄送王总和本人邮箱"
+        },
+        li: {
+          label: "李二",
+          display: "李二 · 同事代订",
+          meta: "证件号 310101********5678",
+          profile: "李二 · 同事",
+          id: "310101********5678",
+          idShort: "身份证 ****5678",
+          reimburse: "上海速通信息科技有限公司",
+          reimburseHtml: "上海速通信息科技有限公司 <em>l***@suton.com</em>",
+          member: "南航明珠、东方万里行已匹配",
+          sync: "出票后抄送李二和本人邮箱"
+        },
+        wangming: {
+          label: "王小明",
+          display: "王小明 · 同事代订",
+          meta: "证件号 420101********2468",
+          profile: "王小明 · 同事",
+          id: "420101********2468",
+          idShort: "身份证 ****2468",
+          reimburse: "上海速通信息科技有限公司",
+          reimburseHtml: "上海速通信息科技有限公司 <em>x***@suton.com</em>",
+          member: "厦航白鹭卡已匹配",
+          sync: "出票后抄送王小明和本人邮箱"
+        },
+        zhao: {
+          label: "赵敏",
+          display: "赵敏 · 同事代订",
+          meta: "证件号 500101********1122",
+          profile: "赵敏 · 同事",
+          id: "500101********1122",
+          idShort: "身份证 ****1122",
+          reimburse: "上海速通信息科技有限公司",
+          reimburseHtml: "上海速通信息科技有限公司 <em>z***@suton.com</em>",
+          member: "厦航白鹭卡已匹配",
+          sync: "出票后抄送赵敏和本人邮箱"
+        }
+      };
+      let businessMode = "self";
+      let businessProxyKey = "li";
+      let businessPassengerKey = "self";
+      const businessCompanions = new Set();
+      const businessCompanionOptions = [
+        { key: "li", name: "李二", relation: "同事", ticketType: "成人票", docStatus: "证件已完善" },
+        { key: "wangming", name: "王小明", relation: "同事", ticketType: "成人票", docStatus: "证件已完善" },
+        { key: "zhao", name: "赵敏", relation: "同事", ticketType: "成人票", docStatus: "证件已完善" }
+      ];
+      let businessCompanionDraft = new Set();
+
+      const getBusinessTraveler = () => businessTravelers[businessPassengerKey] || businessTravelers.self;
+
+      const getBusinessTripSummary = () => {
+        const route = `${businessTripState.from} → ${businessTripState.to}`;
+        const date = businessTripState.returnDate
+          ? `${businessTripState.departDate}出发 · ${businessTripState.returnDate}返程`
+          : `${businessTripState.departDate}出发`;
+        return { route, date };
+      };
+
+      const updateBusinessIdentityView = () => {
+        const traveler = getBusinessTraveler();
+        document.querySelectorAll("[data-business-mode]").forEach((button) => {
+          button.classList.toggle("is-selected", button.dataset.businessMode === businessMode);
+        });
+        document.querySelector("[data-business-proxy-panel]")?.toggleAttribute("hidden", businessMode !== "proxy");
+        document.querySelectorAll("[data-business-proxy]").forEach((button) => {
+          button.classList.toggle("is-selected", button.dataset.businessProxy === businessProxyKey);
+        });
+        document.querySelectorAll("[data-business-passenger]").forEach((button) => {
+          button.classList.toggle("is-selected", button.dataset.businessPassenger === businessPassengerKey);
+        });
+        const travelerName = document.querySelector("[data-business-traveler-name]");
+        const travelerMeta = document.querySelector("[data-business-traveler-meta]");
+        const profileTraveler = document.querySelector("[data-business-profile-traveler]");
+        const profileId = document.querySelector("[data-business-profile-id]");
+        const profileReimburse = document.querySelector("[data-business-profile-reimburse]");
+        const syncText = document.querySelector("[data-business-sync-text]");
+        const aiTitle = document.querySelector("[data-business-ai-title]");
+        if (travelerName) travelerName.textContent = traveler.display;
+        if (travelerMeta) travelerMeta.textContent = traveler.meta;
+        if (profileTraveler) profileTraveler.textContent = traveler.profile;
+        if (profileId) profileId.textContent = traveler.idShort || traveler.id;
+        if (profileReimburse) profileReimburse.innerHTML = traveler.reimburseHtml || traveler.reimburse;
+        if (syncText) {
+          const companionText = businessCompanions.size ? `，同行 ${businessCompanions.size} 人` : "";
+          syncText.textContent = `${traveler.sync}${companionText}`;
+        }
+        if (aiTitle) {
+          aiTitle.textContent = "张先生，小横已为你带入本人资料、常用路线和商旅偏好，确认后可查看商旅航班。";
+        }
+      };
+
+      const getBusinessCompanionOption = (key) => {
+        const option = businessCompanionOptions.find((item) => item.key === key);
+        const traveler = businessTravelers[key];
+        if (!option || !traveler) return null;
+        const id = traveler.id || "";
+        const tail = id.slice(-4) || "----";
+        return {
+          ...option,
+          name: option.name || traveler.label,
+          id,
+          docDisplay: `身份证 ${id}`,
+          docTail: tail
+        };
+      };
+
+      const renderBusinessCompanionPicker = () => {
+        const list = document.querySelector("[data-companion-picker-list]");
+        const confirm = document.querySelector("[data-companion-picker-confirm]");
+        if (list) {
+          list.innerHTML = businessCompanionOptions.map((source) => {
+            const item = getBusinessCompanionOption(source.key);
+            if (!item) return "";
+            const selected = businessCompanionDraft.has(item.key);
+            return `
+              <button class="business-picker-row ${selected ? "is-selected" : ""}" type="button" data-companion-picker-toggle="${item.key}">
+                <span class="business-picker-check">✓</span>
+                <div>
+                  <b>${item.name} · ${item.relation} · ${item.ticketType}</b>
+                  <em>${item.docDisplay} · ${item.docStatus}</em>
+                </div>
+              </button>
+            `;
+          }).join("");
+        }
+        if (confirm) confirm.textContent = `确认添加 ${businessCompanionDraft.size} 位同行`;
+      };
+
+      const renderBusinessCompanions = () => {
+        const count = businessCompanions.size;
+        const title = document.querySelector("[data-business-companion-title]");
+        const copy = document.querySelector("[data-business-companion-copy]");
+        const empty = document.querySelector("[data-business-companion-empty]");
+        const selectedWrap = document.querySelector("[data-business-selected-companions]");
+        const quickWrap = document.querySelector("[data-business-companion-quick]");
+
+        if (title) title.innerHTML = `<svg class="icon"><use href="#i-users"/></svg>本次同行`;
+        if (copy) {
+          copy.textContent = count
+            ? `与张先生同程出行，按 ${count + 1} 人生成方案`
+            : "张先生本人已带入，可添加同事一起出行";
+        }
+        if (empty) empty.hidden = count > 0;
+
+        if (selectedWrap) {
+          const selectedItems = [...businessCompanions].map(getBusinessCompanionOption).filter(Boolean);
+          selectedWrap.hidden = selectedItems.length === 0;
+          selectedWrap.innerHTML = selectedItems.map((item) => `
+            <div class="business-added-companion">
+              <button class="business-companion-remove" type="button" aria-label="从本次行程移除${item.name}" data-business-companion-remove="${item.key}">−</button>
+              <div class="business-added-copy">
+                <div class="business-added-top">
+                  <strong>${item.name} · ${item.relation}</strong>
+                </div>
+                <span class="business-added-doc">${item.docDisplay}</span>
+              </div>
+              <span class="business-added-selected-mark" aria-label="已加入本次行程">✓</span>
+              <button class="business-companion-edit" type="button" aria-label="编辑${item.name}乘机人信息" data-business-companion-edit="${item.key}">›</button>
+            </div>
+          `).join("");
+        }
+
+        if (quickWrap) {
+          const candidates = businessCompanionOptions
+            .map((item) => getBusinessCompanionOption(item.key))
+            .filter((item) => item && !businessCompanions.has(item.key))
+            .slice(0, 3);
+          quickWrap.innerHTML = candidates.map((item) => `
+            <button class="business-companion-chip" type="button" data-business-companion="${item.key}">
+              <strong>+ ${item.name}</strong>
+            </button>
+          `).join("") + `<button class="business-companion-chip" type="button" data-companion-picker-open><strong>+ 继续添加同行人</strong></button>`;
+        }
+      };
+
+      const openBusinessCompanionPicker = () => {
+        businessCompanionDraft = new Set(businessCompanions);
+        renderBusinessCompanionPicker();
+        document.querySelector("[data-business-companion-layer]")?.classList.add("show");
+      };
+
+      const closeBusinessCompanionPicker = () => {
+        document.querySelector("[data-business-companion-layer]")?.classList.remove("show");
+      };
+
+      const addBusinessCompanion = (key) => {
+        const item = getBusinessCompanionOption(key);
+        if (!item) return;
+        if (businessCompanions.has(key)) {
+          showToast(`${item.name}已在本次同行中`);
+          return;
+        }
+        businessCompanions.add(key);
+        renderBusinessCompanions();
+        updateBusinessIdentityView();
+        updateBusinessSummary();
+        showToast(`已加入${item.name}为本次同行`);
+      };
 
       const updateBusinessTripView = () => {
         document.querySelector("[data-business-from-city]") && (document.querySelector("[data-business-from-city]").textContent = businessTripState.from);
         document.querySelector("[data-business-to-city]") && (document.querySelector("[data-business-to-city]").textContent = businessTripState.to);
-        document.querySelector("[data-business-depart-date-text]") && (document.querySelector("[data-business-depart-date-text]").textContent = `${businessTripState.departDate} ${businessTripState.departWeek}`);
+        document.querySelector("[data-business-depart-date-text]") && (document.querySelector("[data-business-depart-date-text]").textContent = `${businessTripState.departDate}${businessTripState.departWeek ? ` ${businessTripState.departWeek}` : ""}`);
 
         const returnButton = document.querySelector("[data-business-return-date]");
         const returnText = document.querySelector("[data-business-return-date-text]");
+        const dateRow = document.querySelector("[data-business-date-row]");
         if (returnText) returnText.textContent = businessTripState.returnDate || "返程日期（可选）";
-        returnButton?.classList.toggle("is-placeholder", !businessTripState.returnDate);
+        if (returnButton) {
+          returnButton.hidden = false;
+          returnButton.classList.toggle("is-placeholder", !businessTripState.returnDate);
+        }
+        dateRow?.classList.toggle("is-oneway", false);
 
         document.querySelectorAll("[data-business-trip-type]").forEach((button) => {
           button.classList.toggle("is-selected", button.dataset.businessTripType === businessTripState.type);
         });
         document.querySelectorAll("[data-business-route]").forEach((button) => {
           button.classList.toggle("is-selected", button.dataset.from === businessTripState.from && button.dataset.to === businessTripState.to);
+        });
+        document.querySelectorAll("[data-business-origin]").forEach((button) => {
+          button.classList.toggle("is-selected", button.dataset.businessOrigin === businessTripState.from);
         });
       };
 
@@ -7453,6 +8897,7 @@
             showToast("可选择返程日期，未选时仍按单程查询");
           }
           updateBusinessTripView();
+          updateBusinessSummary();
         });
       });
 
@@ -7463,6 +8908,8 @@
       document.querySelector("[data-business-swap]")?.addEventListener("click", () => {
         [businessTripState.from, businessTripState.to] = [businessTripState.to, businessTripState.from];
         updateBusinessTripView();
+        updateBusinessIdentityView();
+        updateBusinessSummary();
         showToast("已打开模拟城市选择");
       });
 
@@ -7474,6 +8921,7 @@
         businessTripState.type = "roundtrip";
         businessTripState.returnDate = "5月17日 周六";
         updateBusinessTripView();
+        updateBusinessSummary();
         showToast("已选择返程日期");
       });
 
@@ -7482,10 +8930,146 @@
           businessTripState.from = button.dataset.from;
           businessTripState.to = button.dataset.to;
           updateBusinessTripView();
+          updateBusinessIdentityView();
+          updateBusinessSummary();
         });
       });
 
+      document.querySelectorAll("[data-business-origin]").forEach((button) => {
+        button.addEventListener("click", () => {
+          businessTripState.from = button.dataset.businessOrigin || "北京";
+          if (businessTripState.from === businessTripState.to) {
+            businessTripState.to = businessTripState.from === "北京" ? "上海" : "北京";
+          }
+          updateBusinessTripView();
+          updateBusinessIdentityView();
+          updateBusinessSummary();
+        });
+      });
+
+      document.querySelectorAll("[data-business-date-preset]").forEach((button) => {
+        button.addEventListener("click", () => {
+          document.querySelectorAll("[data-business-date-preset]").forEach((item) => item.classList.remove("is-selected"));
+          button.classList.add("is-selected");
+          const preset = button.dataset.businessDatePreset;
+          if (preset === "tomorrow") {
+            businessTripState.departDate = "5月16日";
+            businessTripState.departWeek = "周五";
+          } else {
+            businessTripState.departDate = "5月15日";
+            businessTripState.departWeek = "周四";
+          }
+          updateBusinessTripView();
+          updateBusinessSummary();
+        });
+      });
+
+      document.querySelectorAll("[data-business-mode]").forEach((button) => {
+        button.addEventListener("click", () => {
+          businessMode = button.dataset.businessMode || "self";
+          if (businessMode === "self") {
+            businessPassengerKey = "self";
+          } else if (businessPassengerKey === "self") {
+            businessPassengerKey = "li";
+            businessProxyKey = "li";
+          }
+          businessCompanions.delete(businessPassengerKey);
+          renderBusinessCompanions();
+          updateBusinessIdentityView();
+          updateBusinessSummary();
+        });
+      });
+
+      document.querySelectorAll("[data-business-passenger]").forEach((button) => {
+        button.addEventListener("click", () => {
+          businessPassengerKey = button.dataset.businessPassenger || "self";
+          businessMode = businessPassengerKey === "self" ? "self" : "proxy";
+          if (businessMode === "proxy") businessProxyKey = businessPassengerKey;
+          businessCompanions.delete(businessPassengerKey);
+          renderBusinessCompanions();
+          updateBusinessIdentityView();
+          updateBusinessSummary();
+        });
+      });
+
+      document.querySelectorAll("[data-business-proxy]").forEach((button) => {
+        button.addEventListener("click", () => {
+          businessProxyKey = button.dataset.businessProxy || "wang";
+          businessPassengerKey = businessProxyKey;
+          if (businessCompanions.delete(businessProxyKey)) {
+            renderBusinessCompanions();
+          }
+          updateBusinessIdentityView();
+          updateBusinessSummary();
+        });
+      });
+
+      document.addEventListener("click", (event) => {
+        const quickCompanion = event.target.closest("[data-business-companion]");
+        if (quickCompanion) {
+          addBusinessCompanion(quickCompanion.dataset.businessCompanion || "");
+          return;
+        }
+
+        const removeCompanion = event.target.closest("[data-business-companion-remove]");
+        if (removeCompanion) {
+          const key = removeCompanion.dataset.businessCompanionRemove || "";
+          const item = getBusinessCompanionOption(key);
+          businessCompanions.delete(key);
+          renderBusinessCompanions();
+          updateBusinessIdentityView();
+          updateBusinessSummary();
+          if (item) showToast(`已从本次行程移除${item.name}`);
+          return;
+        }
+
+        const editCompanion = event.target.closest("[data-business-companion-edit]");
+        if (editCompanion) {
+          const item = getBusinessCompanionOption(editCompanion.dataset.businessCompanionEdit || "");
+          if (item) showToast(`可编辑${item.name}的证件、票种和联系方式`);
+          return;
+        }
+
+        if (event.target.closest("[data-companion-picker-open]")) {
+          openBusinessCompanionPicker();
+          return;
+        }
+
+        if (event.target.closest("[data-companion-picker-close]")) {
+          closeBusinessCompanionPicker();
+          return;
+        }
+
+        const pickerToggle = event.target.closest("[data-companion-picker-toggle]");
+        if (pickerToggle) {
+          const key = pickerToggle.dataset.companionPickerToggle || "";
+          if (businessCompanionDraft.has(key)) {
+            businessCompanionDraft.delete(key);
+          } else if (getBusinessCompanionOption(key)) {
+            businessCompanionDraft.add(key);
+          }
+          renderBusinessCompanionPicker();
+          return;
+        }
+
+        if (event.target.closest("[data-companion-picker-confirm]")) {
+          businessCompanions.clear();
+          businessCompanionDraft.forEach((key) => businessCompanions.add(key));
+          renderBusinessCompanions();
+          updateBusinessIdentityView();
+          updateBusinessSummary();
+          closeBusinessCompanionPicker();
+          showToast(businessCompanions.size ? `已添加 ${businessCompanions.size} 位同行` : "已恢复为本人订票");
+        }
+      });
+
+      document.querySelector("[data-business-companion-layer]")?.addEventListener("click", (event) => {
+        if (event.target === event.currentTarget) closeBusinessCompanionPicker();
+      });
+
       updateBusinessTripView();
+      updateBusinessIdentityView();
+      renderBusinessCompanions();
 
       document.querySelectorAll("[data-elderly-route]").forEach((button) => {
         button.addEventListener("click", () => {
@@ -7505,35 +9089,28 @@
 
       const updateBusinessSummary = () => {
         const selectedStrategies = Array.from(document.querySelectorAll("[data-business-strategy].is-selected"));
-        const selectedServices = Array.from(document.querySelectorAll("[data-business-service].is-selected"));
         const strategyCount = selectedStrategies.length;
-        const serviceCount = selectedServices.length;
         const strategyNode = document.querySelector("[data-business-strategy-count]");
-        const serviceNode = document.querySelector("[data-business-service-count]");
+        const strategySummary = document.querySelector("[data-business-policy-summary]");
         const ctaSub = document.querySelector("[data-business-cta-sub]");
+        const ctaButton = document.querySelector("[data-business-query]");
         const planCopy = document.querySelector("[data-business-plan-copy]");
-        const pickupSelected = document.querySelector('[data-business-service][data-service-key="pickup"]')?.classList.contains("is-selected");
-        const previewList = document.querySelector("[data-business-preview-list]");
-        document.querySelector("[data-business-service-hint]")?.classList.toggle("show", Boolean(pickupSelected));
+        const traveler = getBusinessTraveler();
+        const trip = getBusinessTripSummary();
+        const companionCount = businessCompanions.size;
+        const travelerText = companionCount ? `${traveler.label} + ${companionCount}位同行` : traveler.label;
         if (strategyNode) strategyNode.textContent = strategyCount;
-        if (serviceNode) serviceNode.textContent = serviceCount;
-        if (ctaSub) ctaSub.textContent = `已带入出行人/报销/会员信息 · 已选 ${strategyCount} 项策略 · ${serviceCount} 项服务`;
-        if (planCopy) planCopy.textContent = `已按 ${strategyCount} 项公务策略和 ${serviceCount} 项服务生成方案`;
-        if (previewList) {
-          const strategyLabels = selectedStrategies.map((button) => button.dataset.previewLabel || button.textContent.trim());
-          const serviceLabels = selectedServices
-            .filter((button) => button.dataset.serviceKey !== "checkin")
-            .map((button) => button.dataset.previewLabel || button.textContent.trim());
-          const previewItems = [
-            ...(strategyLabels.length ? strategyLabels : ["保留默认公务筛选"]),
-            "报销资料自动归档",
-            ...serviceLabels
-          ];
-          previewList.innerHTML = previewItems.map((item) => `<li>${item}</li>`).join("");
+        const routeCompact = `${businessTripState.from}→${businessTripState.to}`;
+        if (ctaButton) ctaButton.textContent = `查看 ${routeCompact} 商旅航班`;
+        if (ctaSub) ctaSub.textContent = `${travelerText} · ${routeCompact} · ${trip.date} · 已选 ${strategyCount} 项偏好`;
+        if (planCopy) planCopy.textContent = `将为${travelerText}按 ${strategyCount} 项商旅偏好进入航班列表`;
+        if (strategySummary) {
+          const labels = selectedStrategies.map((button) => button.dataset.previewLabel || button.querySelector("strong")?.textContent.trim()).filter(Boolean);
+          strategySummary.textContent = labels.length ? labels.slice(0, 4).join(" · ") : "可按本次商旅需求选择偏好";
         }
       };
 
-      document.querySelectorAll("[data-business-strategy], [data-business-service]").forEach((button) => {
+      document.querySelectorAll("[data-business-strategy]").forEach((button) => {
         button.addEventListener("click", () => {
           button.classList.toggle("is-selected");
           updateBusinessSummary();
@@ -7545,30 +9122,15 @@
         if (!advanced) return;
         const willOpen = advanced.hidden;
         advanced.hidden = !willOpen;
-        event.currentTarget.textContent = willOpen ? "收起更多策略" : "调整更多策略";
+        event.currentTarget.textContent = willOpen ? "收起⌃" : "调整⌄";
       });
 
       updateBusinessSummary();
 
-      document.querySelector("[data-business-traveler]")?.addEventListener("click", () => {
-        showToast("可修改出行人、报销信息和航司会员");
-      });
-
-      const businessCardLayer = document.querySelector("[data-business-card-layer]");
-      const openBusinessCardLayer = () => businessCardLayer?.classList.add("show");
-      const closeBusinessCardLayer = () => businessCardLayer?.classList.remove("show");
-      document.querySelector("[data-business-card-open]")?.addEventListener("click", (event) => {
-        const memberLine = document.querySelector("[data-business-member-line]");
-        const isOpen = !memberLine?.classList.contains("is-open");
-        memberLine?.classList.toggle("is-open", isOpen);
-        event.currentTarget.textContent = isOpen ? "收起" : "查看";
-      });
-      document.querySelector("[data-business-card-close]")?.addEventListener("click", closeBusinessCardLayer);
-      document.querySelectorAll("[data-business-card-add]").forEach((button) => {
-        button.addEventListener("click", () => showToast("已打开添加常旅卡模拟入口"));
-      });
-      businessCardLayer?.addEventListener("click", (event) => {
-        if (event.target === businessCardLayer) closeBusinessCardLayer();
+      document.querySelectorAll("[data-business-traveler]").forEach((button) => {
+        button.addEventListener("click", () => {
+          showToast("可修改出行人、报销信息和自动发送设置");
+        });
       });
 
       const businessPlanLayer = document.querySelector("[data-business-plan-layer]");
@@ -7756,14 +9318,22 @@
         button.addEventListener("click", () => showToast(`进入${button.dataset.serviceToast}服务`));
       });
 
-      document.querySelector("[data-business-query]")?.addEventListener("click", () => {
-        updateBusinessSummary();
-        openBusinessPlanLayer();
+      document.querySelectorAll("[data-business-query], [data-business-fast-query]").forEach((button) => {
+        button.addEventListener("click", () => {
+          updateBusinessSummary();
+          openBusinessPlanLayer();
+        });
       });
 
       document.querySelector("[data-business-list]")?.addEventListener("click", () => {
         closeBusinessPlanLayer();
-        showToast("已按张先生的公务出行习惯查询航班");
+        showToast(`已为${getBusinessTraveler().label}带入商旅偏好进入航班列表`);
+      });
+
+      document.querySelectorAll("[data-business-tool]").forEach((button) => {
+        button.addEventListener("click", () => {
+          showToast(`已打开${button.dataset.businessTool}模拟入口`);
+        });
       });
 
       document.querySelector("[data-elderly-query]")?.addEventListener("click", () => {
